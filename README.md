@@ -4,7 +4,7 @@ Calculator to determine optimal solutions for the game Word Factori: https://sto
 
 
 
-Files
+# Files
 
 recipes.json: game file describing symbol recipes - has unicode for door and key replaced with "d" and "k" to avoid unicode characters
 
