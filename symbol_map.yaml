@@ -1,0 +1,5441 @@
+'#':
+- factory: oRotate_ccw
+  input_symbols:
+  - '#1'
+- factory: oRotate_cw
+  input_symbols:
+  - '#3'
+- factory: oReflect_hor
+  input_symbols:
+  - '#01'
+- factory: oReflect_vert
+  input_symbols:
+  - '#21'
+- factory: oMerger2
+  input_symbols:
+  - '='
+  - =1
+- factory: oMerger4
+  input_symbols:
+  - I
+  - I
+  - I1
+  - I1
+- factory: oMerger4
+  input_symbols:
+  - +
+  - +
+  - +
+  - +
+'#01':
+- factory: oRotate_cw
+  input_symbols:
+  - '#31'
+- factory: oRotate_ccw
+  input_symbols:
+  - '#11'
+- factory: oReflect_hor
+  input_symbols:
+  - '#'
+- factory: oReflect_vert
+  input_symbols:
+  - '#2'
+'#1':
+- factory: oRotate_cw
+  input_symbols:
+  - '#'
+- factory: oRotate_ccw
+  input_symbols:
+  - '#2'
+- factory: oReflect_hor
+  input_symbols:
+  - '#31'
+- factory: oReflect_vert
+  input_symbols:
+  - '#11'
+'#11':
+- factory: oRotate_cw
+  input_symbols:
+  - '#01'
+- factory: oRotate_ccw
+  input_symbols:
+  - '#21'
+- factory: oReflect_hor
+  input_symbols:
+  - '#3'
+- factory: oReflect_vert
+  input_symbols:
+  - '#1'
+'#2':
+- factory: oRotate_cw
+  input_symbols:
+  - '#1'
+- factory: oRotate_ccw
+  input_symbols:
+  - '#3'
+- factory: oReflect_hor
+  input_symbols:
+  - '#21'
+- factory: oReflect_vert
+  input_symbols:
+  - '#01'
+'#21':
+- factory: oRotate_cw
+  input_symbols:
+  - '#11'
+- factory: oRotate_ccw
+  input_symbols:
+  - '#31'
+- factory: oReflect_hor
+  input_symbols:
+  - '#2'
+- factory: oReflect_vert
+  input_symbols:
+  - '#'
+'#3':
+- factory: oRotate_cw
+  input_symbols:
+  - '#2'
+- factory: oRotate_ccw
+  input_symbols:
+  - '#'
+- factory: oReflect_hor
+  input_symbols:
+  - '#11'
+- factory: oReflect_vert
+  input_symbols:
+  - '#31'
+'#31':
+- factory: oRotate_cw
+  input_symbols:
+  - '#21'
+- factory: oRotate_ccw
+  input_symbols:
+  - '#01'
+- factory: oReflect_hor
+  input_symbols:
+  - '#1'
+- factory: oReflect_vert
+  input_symbols:
+  - '#3'
+$:
+- factory: oRotate_ccw
+  input_symbols:
+  - $1
+- factory: oRotate_cw
+  input_symbols:
+  - $1
+- factory: oReflect_hor
+  input_symbols:
+  - $01
+- factory: oReflect_vert
+  input_symbols:
+  - $01
+- factory: oMerger2
+  input_symbols:
+  - I
+  - S
+- factory: oMerger3
+  input_symbols:
+  - I
+  - I
+  - S
+$01:
+- factory: oRotate_ccw
+  input_symbols:
+  - $11
+- factory: oRotate_cw
+  input_symbols:
+  - $11
+- factory: oReflect_hor
+  input_symbols:
+  - $
+- factory: oReflect_vert
+  input_symbols:
+  - $
+$1:
+- factory: oRotate_cw
+  input_symbols:
+  - $
+- factory: oRotate_ccw
+  input_symbols:
+  - $
+- factory: oReflect_hor
+  input_symbols:
+  - $11
+- factory: oReflect_vert
+  input_symbols:
+  - $11
+$11:
+- factory: oRotate_cw
+  input_symbols:
+  - $01
+- factory: oRotate_ccw
+  input_symbols:
+  - $01
+- factory: oReflect_hor
+  input_symbols:
+  - $1
+- factory: oReflect_vert
+  input_symbols:
+  - $1
+'%':
+- factory: oRotate_ccw
+  input_symbols:
+  - '%1'
+- factory: oRotate_cw
+  input_symbols:
+  - '%1'
+- factory: oReflect_hor
+  input_symbols:
+  - '%01'
+- factory: oReflect_vert
+  input_symbols:
+  - '%01'
+- factory: oMerger2
+  input_symbols:
+  - '8'
+  - I
+- factory: oMerger2
+  input_symbols:
+  - '8'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '81'
+  - I
+- factory: oMerger2
+  input_symbols:
+  - '81'
+  - I1
+- factory: oMerger3
+  input_symbols:
+  - I
+  - O
+  - O
+- factory: oMerger3
+  input_symbols:
+  - I1
+  - O
+  - O
+- factory: oMerger3
+  input_symbols:
+  - '0'
+  - '0'
+  - I
+- factory: oMerger3
+  input_symbols:
+  - '0'
+  - '0'
+  - I1
+'%01':
+- factory: oRotate_ccw
+  input_symbols:
+  - '%11'
+- factory: oRotate_cw
+  input_symbols:
+  - '%11'
+- factory: oReflect_hor
+  input_symbols:
+  - '%'
+- factory: oReflect_vert
+  input_symbols:
+  - '%'
+'%1':
+- factory: oRotate_cw
+  input_symbols:
+  - '%'
+- factory: oRotate_ccw
+  input_symbols:
+  - '%'
+- factory: oReflect_hor
+  input_symbols:
+  - '%11'
+- factory: oReflect_vert
+  input_symbols:
+  - '%11'
+'%11':
+- factory: oRotate_cw
+  input_symbols:
+  - '%01'
+- factory: oRotate_ccw
+  input_symbols:
+  - '%01'
+- factory: oReflect_hor
+  input_symbols:
+  - '%1'
+- factory: oReflect_vert
+  input_symbols:
+  - '%1'
+'&':
+- factory: oRotate_ccw
+  input_symbols:
+  - '&1'
+- factory: oRotate_cw
+  input_symbols:
+  - '&3'
+- factory: oReflect_hor
+  input_symbols:
+  - '&01'
+- factory: oReflect_vert
+  input_symbols:
+  - '&21'
+- factory: oMerger2
+  input_symbols:
+  - '8'
+  - V3
+- factory: oMerger2
+  input_symbols:
+  - '8'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '8'
+  - X
+- factory: oMerger2
+  input_symbols:
+  - '8'
+  - L
+- factory: oMerger2
+  input_symbols:
+  - '8'
+  - L3
+- factory: oMerger2
+  input_symbols:
+  - (
+  - S01
+'&01':
+- factory: oRotate_cw
+  input_symbols:
+  - '&31'
+- factory: oRotate_ccw
+  input_symbols:
+  - '&11'
+- factory: oReflect_hor
+  input_symbols:
+  - '&'
+- factory: oReflect_vert
+  input_symbols:
+  - '&2'
+'&1':
+- factory: oRotate_cw
+  input_symbols:
+  - '&'
+- factory: oRotate_ccw
+  input_symbols:
+  - '&2'
+- factory: oReflect_hor
+  input_symbols:
+  - '&31'
+- factory: oReflect_vert
+  input_symbols:
+  - '&11'
+'&11':
+- factory: oRotate_cw
+  input_symbols:
+  - '&01'
+- factory: oRotate_ccw
+  input_symbols:
+  - '&21'
+- factory: oReflect_hor
+  input_symbols:
+  - '&3'
+- factory: oReflect_vert
+  input_symbols:
+  - '&1'
+'&2':
+- factory: oRotate_cw
+  input_symbols:
+  - '&1'
+- factory: oRotate_ccw
+  input_symbols:
+  - '&3'
+- factory: oReflect_hor
+  input_symbols:
+  - '&21'
+- factory: oReflect_vert
+  input_symbols:
+  - '&01'
+'&21':
+- factory: oRotate_cw
+  input_symbols:
+  - '&11'
+- factory: oRotate_ccw
+  input_symbols:
+  - '&31'
+- factory: oReflect_hor
+  input_symbols:
+  - '&2'
+- factory: oReflect_vert
+  input_symbols:
+  - '&'
+'&3':
+- factory: oRotate_cw
+  input_symbols:
+  - '&2'
+- factory: oRotate_ccw
+  input_symbols:
+  - '&'
+- factory: oReflect_hor
+  input_symbols:
+  - '&11'
+- factory: oReflect_vert
+  input_symbols:
+  - '&31'
+'&31':
+- factory: oRotate_cw
+  input_symbols:
+  - '&21'
+- factory: oRotate_ccw
+  input_symbols:
+  - '&01'
+- factory: oReflect_hor
+  input_symbols:
+  - '&1'
+- factory: oReflect_vert
+  input_symbols:
+  - '&3'
+(:
+- factory: oRotate_ccw
+  input_symbols:
+  - (1
+- factory: oRotate_cw
+  input_symbols:
+  - )1
+- factory: oReflect_vert
+  input_symbols:
+  - (
+- factory: oReflect_hor
+  input_symbols:
+  - )
+- factory: oBend
+  input_symbols:
+  - C
+(1:
+- factory: oRotate_cw
+  input_symbols:
+  - (
+- factory: oRotate_ccw
+  input_symbols:
+  - )
+- factory: oReflect_hor
+  input_symbols:
+  - (1
+- factory: oReflect_vert
+  input_symbols:
+  - )1
+):
+- factory: oRotate_ccw
+  input_symbols:
+  - )1
+- factory: oRotate_cw
+  input_symbols:
+  - (1
+- factory: oReflect_vert
+  input_symbols:
+  - )
+- factory: oReflect_hor
+  input_symbols:
+  - (
+- factory: oBend
+  input_symbols:
+  - C2
+)1:
+- factory: oRotate_cw
+  input_symbols:
+  - )
+- factory: oRotate_ccw
+  input_symbols:
+  - (
+- factory: oReflect_hor
+  input_symbols:
+  - )1
+- factory: oReflect_vert
+  input_symbols:
+  - (1
++:
+- factory: oRotate_cw
+  input_symbols:
+  - +
+- factory: oRotate_ccw
+  input_symbols:
+  - +
+- factory: oReflect_hor
+  input_symbols:
+  - +
+- factory: oReflect_vert
+  input_symbols:
+  - +
+- factory: oMerger2
+  input_symbols:
+  - L
+  - L2
+- factory: oMerger2
+  input_symbols:
+  - L1
+  - L3
+- factory: oMerger2
+  input_symbols:
+  - L01
+  - L21
+- factory: oMerger2
+  input_symbols:
+  - L11
+  - L31
+- factory: oMerger2
+  input_symbols:
+  - I
+  - T
+- factory: oMerger2
+  input_symbols:
+  - I
+  - T2
+- factory: oMerger2
+  input_symbols:
+  - I1
+  - T3
+- factory: oMerger2
+  input_symbols:
+  - T
+  - T2
+- factory: oMerger4
+  input_symbols:
+  - L
+  - L1
+  - L2
+  - L3
+'0':
+- factory: oRotate_ccw
+  input_symbols:
+  - '01'
+- factory: oRotate_cw
+  input_symbols:
+  - '01'
+- factory: oReflect_hor
+  input_symbols:
+  - '0'
+- factory: oReflect_vert
+  input_symbols:
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - (
+  - )
+- factory: oMerger2
+  input_symbols:
+  - J
+  - J2
+- factory: oMerger4
+  input_symbols:
+  - Z
+  - E
+  - R
+  - O
+- factory: oMerger2
+  input_symbols:
+  - '0'
+  - '0'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '1'
+  - '1'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '2'
+  - '2'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '3'
+  - '3'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '4'
+  - '4'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '5'
+  - '5'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '6'
+  - '6'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '7'
+  - '7'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '8'
+  - '8'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '9'
+  - '9'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '0'
+  - '0'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '0'
+  - '0'
+- factory: oMerger3
+  input_symbols:
+  - '0'
+  - '0'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '0'
+  - '0'
+  - '0'
+  - '0'
+'01':
+- factory: oRotate_cw
+  input_symbols:
+  - '0'
+- factory: oRotate_ccw
+  input_symbols:
+  - '0'
+- factory: oReflect_hor
+  input_symbols:
+  - '01'
+- factory: oReflect_vert
+  input_symbols:
+  - '01'
+'1':
+- factory: oRotate_ccw
+  input_symbols:
+  - '11'
+- factory: oRotate_cw
+  input_symbols:
+  - '13'
+- factory: oReflect_hor
+  input_symbols:
+  - '101'
+- factory: oReflect_vert
+  input_symbols:
+  - '121'
+- factory: oMerger3
+  input_symbols:
+  - O
+  - N
+  - E
+- factory: oBend
+  input_symbols:
+  - L2
+- factory: oMerger2
+  input_symbols:
+  - '1'
+  - '0'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '2'
+  - '1'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '3'
+  - '2'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '4'
+  - '3'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '5'
+  - '4'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '6'
+  - '5'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '7'
+  - '6'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '8'
+  - '7'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '9'
+  - '8'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '1'
+  - '0'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '1'
+  - '0'
+- factory: oMerger3
+  input_symbols:
+  - '1'
+  - '0'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '1'
+  - '0'
+  - '0'
+  - '0'
+'101':
+- factory: oRotate_cw
+  input_symbols:
+  - '131'
+- factory: oRotate_ccw
+  input_symbols:
+  - '111'
+- factory: oReflect_hor
+  input_symbols:
+  - '1'
+- factory: oReflect_vert
+  input_symbols:
+  - '12'
+'11':
+- factory: oRotate_cw
+  input_symbols:
+  - '1'
+- factory: oRotate_ccw
+  input_symbols:
+  - '12'
+- factory: oReflect_hor
+  input_symbols:
+  - '131'
+- factory: oReflect_vert
+  input_symbols:
+  - '111'
+'111':
+- factory: oRotate_cw
+  input_symbols:
+  - '101'
+- factory: oRotate_ccw
+  input_symbols:
+  - '121'
+- factory: oReflect_hor
+  input_symbols:
+  - '13'
+- factory: oReflect_vert
+  input_symbols:
+  - '11'
+'12':
+- factory: oRotate_cw
+  input_symbols:
+  - '11'
+- factory: oRotate_ccw
+  input_symbols:
+  - '13'
+- factory: oReflect_hor
+  input_symbols:
+  - '121'
+- factory: oReflect_vert
+  input_symbols:
+  - '101'
+'121':
+- factory: oRotate_cw
+  input_symbols:
+  - '111'
+- factory: oRotate_ccw
+  input_symbols:
+  - '131'
+- factory: oReflect_hor
+  input_symbols:
+  - '12'
+- factory: oReflect_vert
+  input_symbols:
+  - '1'
+'13':
+- factory: oRotate_cw
+  input_symbols:
+  - '12'
+- factory: oRotate_ccw
+  input_symbols:
+  - '1'
+- factory: oReflect_hor
+  input_symbols:
+  - '111'
+- factory: oReflect_vert
+  input_symbols:
+  - '131'
+'131':
+- factory: oRotate_cw
+  input_symbols:
+  - '121'
+- factory: oRotate_ccw
+  input_symbols:
+  - '101'
+- factory: oReflect_hor
+  input_symbols:
+  - '11'
+- factory: oReflect_vert
+  input_symbols:
+  - '13'
+'2':
+- factory: oRotate_ccw
+  input_symbols:
+  - '21'
+- factory: oRotate_cw
+  input_symbols:
+  - '23'
+- factory: oReflect_hor
+  input_symbols:
+  - '201'
+- factory: oReflect_vert
+  input_symbols:
+  - '221'
+- factory: oMerger2
+  input_symbols:
+  - I1
+  - J21
+- factory: oMerger2
+  input_symbols:
+  - V3
+  - J21
+- factory: oMerger2
+  input_symbols:
+  - C2
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - )
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - C3
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - C3
+  - V3
+- factory: oMerger3
+  input_symbols:
+  - T
+  - W
+  - O
+- factory: oBend
+  input_symbols:
+  - Z
+- factory: oMerger2
+  input_symbols:
+  - '2'
+  - '0'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '3'
+  - '1'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '4'
+  - '2'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '5'
+  - '3'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '6'
+  - '4'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '7'
+  - '5'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '8'
+  - '6'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '9'
+  - '7'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '1'
+  - '1'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '1'
+  - '1'
+- factory: oMerger3
+  input_symbols:
+  - '1'
+  - '1'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '1'
+  - '1'
+  - '0'
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - '2'
+  - '0'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '2'
+  - '0'
+- factory: oMerger3
+  input_symbols:
+  - '2'
+  - '0'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '2'
+  - '0'
+  - '0'
+  - '0'
+'201':
+- factory: oRotate_cw
+  input_symbols:
+  - '231'
+- factory: oRotate_ccw
+  input_symbols:
+  - '211'
+- factory: oReflect_hor
+  input_symbols:
+  - '2'
+- factory: oReflect_vert
+  input_symbols:
+  - '22'
+'21':
+- factory: oRotate_cw
+  input_symbols:
+  - '2'
+- factory: oRotate_ccw
+  input_symbols:
+  - '22'
+- factory: oReflect_hor
+  input_symbols:
+  - '231'
+- factory: oReflect_vert
+  input_symbols:
+  - '211'
+'211':
+- factory: oRotate_cw
+  input_symbols:
+  - '201'
+- factory: oRotate_ccw
+  input_symbols:
+  - '221'
+- factory: oReflect_hor
+  input_symbols:
+  - '23'
+- factory: oReflect_vert
+  input_symbols:
+  - '21'
+'22':
+- factory: oRotate_cw
+  input_symbols:
+  - '21'
+- factory: oRotate_ccw
+  input_symbols:
+  - '23'
+- factory: oReflect_hor
+  input_symbols:
+  - '221'
+- factory: oReflect_vert
+  input_symbols:
+  - '201'
+'221':
+- factory: oRotate_cw
+  input_symbols:
+  - '211'
+- factory: oRotate_ccw
+  input_symbols:
+  - '231'
+- factory: oReflect_hor
+  input_symbols:
+  - '22'
+- factory: oReflect_vert
+  input_symbols:
+  - '2'
+'23':
+- factory: oRotate_cw
+  input_symbols:
+  - '22'
+- factory: oRotate_ccw
+  input_symbols:
+  - '2'
+- factory: oReflect_hor
+  input_symbols:
+  - '211'
+- factory: oReflect_vert
+  input_symbols:
+  - '231'
+'231':
+- factory: oRotate_cw
+  input_symbols:
+  - '221'
+- factory: oRotate_ccw
+  input_symbols:
+  - '201'
+- factory: oReflect_hor
+  input_symbols:
+  - '21'
+- factory: oReflect_vert
+  input_symbols:
+  - '23'
+'3':
+- factory: oRotate_ccw
+  input_symbols:
+  - '31'
+- factory: oRotate_cw
+  input_symbols:
+  - '33'
+- factory: oReflect_hor
+  input_symbols:
+  - '32'
+- factory: oReflect_vert
+  input_symbols:
+  - '3'
+- factory: oMerger2
+  input_symbols:
+  - C2
+  - C2
+- factory: oMerger2
+  input_symbols:
+  - C2
+  - U1
+- factory: oMerger2
+  input_symbols:
+  - U1
+  - U1
+- factory: oBend
+  input_symbols:
+  - W1
+- factory: oBend
+  input_symbols:
+  - M3
+- factory: oBend
+  input_symbols:
+  - E01
+- factory: oMerger2
+  input_symbols:
+  - '3'
+  - '0'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '4'
+  - '1'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '5'
+  - '2'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '6'
+  - '3'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '7'
+  - '4'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '8'
+  - '5'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '9'
+  - '6'
+  - I1
+- factory: oMerger3
+  input_symbols:
+  - '1'
+  - '1'
+  - '1'
+- factory: oMerger4
+  input_symbols:
+  - '1'
+  - '1'
+  - '1'
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - '2'
+  - '1'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '2'
+  - '1'
+- factory: oMerger3
+  input_symbols:
+  - '2'
+  - '1'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '2'
+  - '1'
+  - '0'
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - '3'
+  - '0'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '3'
+  - '0'
+- factory: oMerger3
+  input_symbols:
+  - '3'
+  - '0'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '3'
+  - '0'
+  - '0'
+  - '0'
+'31':
+- factory: oRotate_cw
+  input_symbols:
+  - '3'
+- factory: oRotate_ccw
+  input_symbols:
+  - '32'
+- factory: oReflect_hor
+  input_symbols:
+  - '31'
+- factory: oReflect_vert
+  input_symbols:
+  - '33'
+'32':
+- factory: oRotate_cw
+  input_symbols:
+  - '31'
+- factory: oRotate_ccw
+  input_symbols:
+  - '33'
+- factory: oReflect_hor
+  input_symbols:
+  - '3'
+- factory: oReflect_vert
+  input_symbols:
+  - '32'
+'33':
+- factory: oRotate_cw
+  input_symbols:
+  - '32'
+- factory: oRotate_ccw
+  input_symbols:
+  - '3'
+- factory: oReflect_hor
+  input_symbols:
+  - '33'
+- factory: oReflect_vert
+  input_symbols:
+  - '31'
+'4':
+- factory: oRotate_ccw
+  input_symbols:
+  - '41'
+- factory: oRotate_cw
+  input_symbols:
+  - '43'
+- factory: oReflect_hor
+  input_symbols:
+  - '401'
+- factory: oReflect_vert
+  input_symbols:
+  - '421'
+- factory: oMerger2
+  input_symbols:
+  - I
+  - '72'
+- factory: oMerger3
+  input_symbols:
+  - I
+  - I
+  - L
+- factory: oMerger4
+  input_symbols:
+  - F
+  - O
+  - U
+  - R
+- factory: oMerger4
+  input_symbols:
+  - I
+  - I
+  - I
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '4'
+  - '0'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '5'
+  - '1'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '6'
+  - '2'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '7'
+  - '3'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '8'
+  - '4'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '9'
+  - '5'
+  - I1
+- factory: oMerger4
+  input_symbols:
+  - '1'
+  - '1'
+  - '1'
+  - '1'
+- factory: oMerger3
+  input_symbols:
+  - '2'
+  - '1'
+  - '1'
+- factory: oMerger4
+  input_symbols:
+  - '2'
+  - '1'
+  - '1'
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - '2'
+  - '2'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '2'
+  - '2'
+- factory: oMerger3
+  input_symbols:
+  - '2'
+  - '2'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '2'
+  - '2'
+  - '0'
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - '3'
+  - '1'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '3'
+  - '1'
+- factory: oMerger3
+  input_symbols:
+  - '3'
+  - '1'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '3'
+  - '1'
+  - '0'
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - '4'
+  - '0'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '4'
+  - '0'
+- factory: oMerger3
+  input_symbols:
+  - '4'
+  - '0'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '4'
+  - '0'
+  - '0'
+  - '0'
+'401':
+- factory: oRotate_cw
+  input_symbols:
+  - '431'
+- factory: oRotate_ccw
+  input_symbols:
+  - '411'
+- factory: oReflect_hor
+  input_symbols:
+  - '4'
+- factory: oReflect_vert
+  input_symbols:
+  - '42'
+'41':
+- factory: oRotate_cw
+  input_symbols:
+  - '4'
+- factory: oRotate_ccw
+  input_symbols:
+  - '42'
+- factory: oReflect_hor
+  input_symbols:
+  - '431'
+- factory: oReflect_vert
+  input_symbols:
+  - '411'
+'411':
+- factory: oRotate_cw
+  input_symbols:
+  - '401'
+- factory: oRotate_ccw
+  input_symbols:
+  - '421'
+- factory: oReflect_hor
+  input_symbols:
+  - '43'
+- factory: oReflect_vert
+  input_symbols:
+  - '41'
+'42':
+- factory: oRotate_cw
+  input_symbols:
+  - '41'
+- factory: oRotate_ccw
+  input_symbols:
+  - '43'
+- factory: oReflect_hor
+  input_symbols:
+  - '421'
+- factory: oReflect_vert
+  input_symbols:
+  - '401'
+'421':
+- factory: oRotate_cw
+  input_symbols:
+  - '411'
+- factory: oRotate_ccw
+  input_symbols:
+  - '431'
+- factory: oReflect_hor
+  input_symbols:
+  - '42'
+- factory: oReflect_vert
+  input_symbols:
+  - '4'
+'43':
+- factory: oRotate_cw
+  input_symbols:
+  - '42'
+- factory: oRotate_ccw
+  input_symbols:
+  - '4'
+- factory: oReflect_hor
+  input_symbols:
+  - '411'
+- factory: oReflect_vert
+  input_symbols:
+  - '431'
+'431':
+- factory: oRotate_cw
+  input_symbols:
+  - '421'
+- factory: oRotate_ccw
+  input_symbols:
+  - '401'
+- factory: oReflect_hor
+  input_symbols:
+  - '41'
+- factory: oReflect_vert
+  input_symbols:
+  - '43'
+'5':
+- factory: oRotate_ccw
+  input_symbols:
+  - '51'
+- factory: oRotate_cw
+  input_symbols:
+  - '53'
+- factory: oReflect_hor
+  input_symbols:
+  - '501'
+- factory: oReflect_vert
+  input_symbols:
+  - '521'
+- factory: oMerger2
+  input_symbols:
+  - L3
+  - C2
+- factory: oMerger2
+  input_symbols:
+  - L01
+  - C2
+- factory: oMerger4
+  input_symbols:
+  - F
+  - I
+  - V
+  - E
+- factory: oMerger2
+  input_symbols:
+  - '5'
+  - '0'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '6'
+  - '1'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '7'
+  - '2'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '8'
+  - '3'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '9'
+  - '4'
+  - I1
+- factory: oMerger4
+  input_symbols:
+  - '2'
+  - '1'
+  - '1'
+  - '1'
+- factory: oMerger3
+  input_symbols:
+  - '2'
+  - '2'
+  - '1'
+- factory: oMerger4
+  input_symbols:
+  - '2'
+  - '2'
+  - '1'
+  - '0'
+- factory: oMerger3
+  input_symbols:
+  - '3'
+  - '1'
+  - '1'
+- factory: oMerger4
+  input_symbols:
+  - '3'
+  - '1'
+  - '1'
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - '3'
+  - '2'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '3'
+  - '2'
+- factory: oMerger3
+  input_symbols:
+  - '3'
+  - '2'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '3'
+  - '2'
+  - '0'
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - '4'
+  - '1'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '4'
+  - '1'
+- factory: oMerger3
+  input_symbols:
+  - '4'
+  - '1'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '4'
+  - '1'
+  - '0'
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - '5'
+  - '0'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '5'
+  - '0'
+- factory: oMerger3
+  input_symbols:
+  - '5'
+  - '0'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '5'
+  - '0'
+  - '0'
+  - '0'
+'501':
+- factory: oRotate_cw
+  input_symbols:
+  - '531'
+- factory: oRotate_ccw
+  input_symbols:
+  - '511'
+- factory: oReflect_hor
+  input_symbols:
+  - '5'
+- factory: oReflect_vert
+  input_symbols:
+  - '52'
+'51':
+- factory: oRotate_cw
+  input_symbols:
+  - '5'
+- factory: oRotate_ccw
+  input_symbols:
+  - '52'
+- factory: oReflect_hor
+  input_symbols:
+  - '531'
+- factory: oReflect_vert
+  input_symbols:
+  - '511'
+'511':
+- factory: oRotate_cw
+  input_symbols:
+  - '501'
+- factory: oRotate_ccw
+  input_symbols:
+  - '521'
+- factory: oReflect_hor
+  input_symbols:
+  - '53'
+- factory: oReflect_vert
+  input_symbols:
+  - '51'
+'52':
+- factory: oRotate_cw
+  input_symbols:
+  - '51'
+- factory: oRotate_ccw
+  input_symbols:
+  - '53'
+- factory: oReflect_hor
+  input_symbols:
+  - '521'
+- factory: oReflect_vert
+  input_symbols:
+  - '501'
+'521':
+- factory: oRotate_cw
+  input_symbols:
+  - '511'
+- factory: oRotate_ccw
+  input_symbols:
+  - '531'
+- factory: oReflect_hor
+  input_symbols:
+  - '52'
+- factory: oReflect_vert
+  input_symbols:
+  - '5'
+'53':
+- factory: oRotate_cw
+  input_symbols:
+  - '52'
+- factory: oRotate_ccw
+  input_symbols:
+  - '5'
+- factory: oReflect_hor
+  input_symbols:
+  - '511'
+- factory: oReflect_vert
+  input_symbols:
+  - '531'
+'531':
+- factory: oRotate_cw
+  input_symbols:
+  - '521'
+- factory: oRotate_ccw
+  input_symbols:
+  - '501'
+- factory: oReflect_hor
+  input_symbols:
+  - '51'
+- factory: oReflect_vert
+  input_symbols:
+  - '53'
+'6':
+- factory: oRotate_ccw
+  input_symbols:
+  - '61'
+- factory: oRotate_cw
+  input_symbols:
+  - '91'
+- factory: oReflect_hor
+  input_symbols:
+  - '601'
+- factory: oReflect_vert
+  input_symbols:
+  - '901'
+- factory: oMerger2
+  input_symbols:
+  - C
+  - O
+- factory: oMerger2
+  input_symbols:
+  - (
+  - O
+- factory: oMerger2
+  input_symbols:
+  - (
+  - C2
+- factory: oMerger2
+  input_symbols:
+  - J2
+  - O
+- factory: oMerger3
+  input_symbols:
+  - S
+  - I
+  - X
+- factory: oBend
+  input_symbols:
+  - P21
+- factory: oMerger2
+  input_symbols:
+  - '6'
+  - '0'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '7'
+  - '1'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '8'
+  - '2'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '9'
+  - '3'
+  - I1
+- factory: oMerger4
+  input_symbols:
+  - '2'
+  - '2'
+  - '1'
+  - '1'
+- factory: oMerger3
+  input_symbols:
+  - '2'
+  - '2'
+  - '2'
+- factory: oMerger4
+  input_symbols:
+  - '2'
+  - '2'
+  - '2'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '3'
+  - '1'
+  - '1'
+  - '1'
+- factory: oMerger3
+  input_symbols:
+  - '3'
+  - '2'
+  - '1'
+- factory: oMerger4
+  input_symbols:
+  - '3'
+  - '2'
+  - '1'
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - '3'
+  - '3'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '3'
+  - '3'
+- factory: oMerger3
+  input_symbols:
+  - '3'
+  - '3'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '3'
+  - '3'
+  - '0'
+  - '0'
+- factory: oMerger3
+  input_symbols:
+  - '4'
+  - '1'
+  - '1'
+- factory: oMerger4
+  input_symbols:
+  - '4'
+  - '1'
+  - '1'
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - '4'
+  - '2'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '4'
+  - '2'
+- factory: oMerger3
+  input_symbols:
+  - '4'
+  - '2'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '4'
+  - '2'
+  - '0'
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - '5'
+  - '1'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '5'
+  - '1'
+- factory: oMerger3
+  input_symbols:
+  - '5'
+  - '1'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '5'
+  - '1'
+  - '0'
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - '6'
+  - '0'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '6'
+  - '0'
+- factory: oMerger3
+  input_symbols:
+  - '6'
+  - '0'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '6'
+  - '0'
+  - '0'
+  - '0'
+'601':
+- factory: oRotate_ccw
+  input_symbols:
+  - '611'
+- factory: oRotate_cw
+  input_symbols:
+  - '911'
+- factory: oReflect_hor
+  input_symbols:
+  - '6'
+- factory: oReflect_vert
+  input_symbols:
+  - '9'
+'61':
+- factory: oRotate_cw
+  input_symbols:
+  - '6'
+- factory: oRotate_ccw
+  input_symbols:
+  - '9'
+- factory: oReflect_hor
+  input_symbols:
+  - '911'
+- factory: oReflect_vert
+  input_symbols:
+  - '611'
+'611':
+- factory: oRotate_cw
+  input_symbols:
+  - '601'
+- factory: oRotate_ccw
+  input_symbols:
+  - '901'
+- factory: oReflect_hor
+  input_symbols:
+  - '91'
+- factory: oReflect_vert
+  input_symbols:
+  - '61'
+'7':
+- factory: oRotate_ccw
+  input_symbols:
+  - '71'
+- factory: oRotate_cw
+  input_symbols:
+  - '73'
+- factory: oReflect_hor
+  input_symbols:
+  - '701'
+- factory: oReflect_vert
+  input_symbols:
+  - '721'
+- factory: oMerger2
+  input_symbols:
+  - (
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - I
+  - V1
+- factory: oMerger2
+  input_symbols:
+  - '7'
+  - '0'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '8'
+  - '1'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '9'
+  - '2'
+  - I1
+- factory: oMerger4
+  input_symbols:
+  - '2'
+  - '2'
+  - '2'
+  - '1'
+- factory: oMerger4
+  input_symbols:
+  - '3'
+  - '2'
+  - '1'
+  - '1'
+- factory: oMerger3
+  input_symbols:
+  - '3'
+  - '2'
+  - '2'
+- factory: oMerger4
+  input_symbols:
+  - '3'
+  - '2'
+  - '2'
+  - '0'
+- factory: oMerger3
+  input_symbols:
+  - '3'
+  - '3'
+  - '1'
+- factory: oMerger4
+  input_symbols:
+  - '3'
+  - '3'
+  - '1'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '4'
+  - '1'
+  - '1'
+  - '1'
+- factory: oMerger3
+  input_symbols:
+  - '4'
+  - '2'
+  - '1'
+- factory: oMerger4
+  input_symbols:
+  - '4'
+  - '2'
+  - '1'
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - '4'
+  - '3'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '4'
+  - '3'
+- factory: oMerger3
+  input_symbols:
+  - '4'
+  - '3'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '4'
+  - '3'
+  - '0'
+  - '0'
+- factory: oMerger3
+  input_symbols:
+  - '5'
+  - '1'
+  - '1'
+- factory: oMerger4
+  input_symbols:
+  - '5'
+  - '1'
+  - '1'
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - '5'
+  - '2'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '5'
+  - '2'
+- factory: oMerger3
+  input_symbols:
+  - '5'
+  - '2'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '5'
+  - '2'
+  - '0'
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - '6'
+  - '1'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '6'
+  - '1'
+- factory: oMerger3
+  input_symbols:
+  - '6'
+  - '1'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '6'
+  - '1'
+  - '0'
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - '7'
+  - '0'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '7'
+  - '0'
+- factory: oMerger3
+  input_symbols:
+  - '7'
+  - '0'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '7'
+  - '0'
+  - '0'
+  - '0'
+'701':
+- factory: oRotate_cw
+  input_symbols:
+  - '731'
+- factory: oRotate_ccw
+  input_symbols:
+  - '711'
+- factory: oReflect_hor
+  input_symbols:
+  - '7'
+- factory: oReflect_vert
+  input_symbols:
+  - '72'
+'71':
+- factory: oRotate_cw
+  input_symbols:
+  - '7'
+- factory: oRotate_ccw
+  input_symbols:
+  - '72'
+- factory: oReflect_hor
+  input_symbols:
+  - '731'
+- factory: oReflect_vert
+  input_symbols:
+  - '711'
+'711':
+- factory: oRotate_cw
+  input_symbols:
+  - '701'
+- factory: oRotate_ccw
+  input_symbols:
+  - '721'
+- factory: oReflect_hor
+  input_symbols:
+  - '73'
+- factory: oReflect_vert
+  input_symbols:
+  - '71'
+'72':
+- factory: oRotate_cw
+  input_symbols:
+  - '71'
+- factory: oRotate_ccw
+  input_symbols:
+  - '73'
+- factory: oReflect_hor
+  input_symbols:
+  - '721'
+- factory: oReflect_vert
+  input_symbols:
+  - '701'
+'721':
+- factory: oRotate_cw
+  input_symbols:
+  - '711'
+- factory: oRotate_ccw
+  input_symbols:
+  - '731'
+- factory: oReflect_hor
+  input_symbols:
+  - '72'
+- factory: oReflect_vert
+  input_symbols:
+  - '7'
+'73':
+- factory: oRotate_cw
+  input_symbols:
+  - '72'
+- factory: oRotate_ccw
+  input_symbols:
+  - '7'
+- factory: oReflect_hor
+  input_symbols:
+  - '711'
+- factory: oReflect_vert
+  input_symbols:
+  - '731'
+'731':
+- factory: oRotate_cw
+  input_symbols:
+  - '721'
+- factory: oRotate_ccw
+  input_symbols:
+  - '701'
+- factory: oReflect_hor
+  input_symbols:
+  - '71'
+- factory: oReflect_vert
+  input_symbols:
+  - '73'
+'8':
+- factory: oRotate_ccw
+  input_symbols:
+  - '81'
+- factory: oRotate_cw
+  input_symbols:
+  - '81'
+- factory: oReflect_hor
+  input_symbols:
+  - '8'
+- factory: oReflect_vert
+  input_symbols:
+  - '8'
+- factory: oMerger2
+  input_symbols:
+  - O
+  - O
+- factory: oMerger2
+  input_symbols:
+  - S
+  - S01
+- factory: oMerger3
+  input_symbols:
+  - O
+  - C
+  - C2
+- factory: oMerger4
+  input_symbols:
+  - C
+  - C
+  - C2
+  - C2
+- factory: oMerger2
+  input_symbols:
+  - '8'
+  - '0'
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - '9'
+  - '1'
+  - I1
+- factory: oMerger4
+  input_symbols:
+  - '2'
+  - '2'
+  - '2'
+  - '2'
+- factory: oMerger4
+  input_symbols:
+  - '3'
+  - '2'
+  - '2'
+  - '1'
+- factory: oMerger4
+  input_symbols:
+  - '3'
+  - '3'
+  - '1'
+  - '1'
+- factory: oMerger3
+  input_symbols:
+  - '3'
+  - '3'
+  - '2'
+- factory: oMerger4
+  input_symbols:
+  - '3'
+  - '3'
+  - '2'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '4'
+  - '2'
+  - '1'
+  - '1'
+- factory: oMerger3
+  input_symbols:
+  - '4'
+  - '2'
+  - '2'
+- factory: oMerger4
+  input_symbols:
+  - '4'
+  - '2'
+  - '2'
+  - '0'
+- factory: oMerger3
+  input_symbols:
+  - '4'
+  - '3'
+  - '1'
+- factory: oMerger4
+  input_symbols:
+  - '4'
+  - '3'
+  - '1'
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - '4'
+  - '4'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '4'
+  - '4'
+- factory: oMerger3
+  input_symbols:
+  - '4'
+  - '4'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '4'
+  - '4'
+  - '0'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '5'
+  - '1'
+  - '1'
+  - '1'
+- factory: oMerger3
+  input_symbols:
+  - '5'
+  - '2'
+  - '1'
+- factory: oMerger4
+  input_symbols:
+  - '5'
+  - '2'
+  - '1'
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - '5'
+  - '3'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '5'
+  - '3'
+- factory: oMerger3
+  input_symbols:
+  - '5'
+  - '3'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '5'
+  - '3'
+  - '0'
+  - '0'
+- factory: oMerger3
+  input_symbols:
+  - '6'
+  - '1'
+  - '1'
+- factory: oMerger4
+  input_symbols:
+  - '6'
+  - '1'
+  - '1'
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - '6'
+  - '2'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '6'
+  - '2'
+- factory: oMerger3
+  input_symbols:
+  - '6'
+  - '2'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '6'
+  - '2'
+  - '0'
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - '7'
+  - '1'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '7'
+  - '1'
+- factory: oMerger3
+  input_symbols:
+  - '7'
+  - '1'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '7'
+  - '1'
+  - '0'
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - '8'
+  - '0'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '8'
+  - '0'
+- factory: oMerger3
+  input_symbols:
+  - '8'
+  - '0'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '8'
+  - '0'
+  - '0'
+  - '0'
+'81':
+- factory: oRotate_cw
+  input_symbols:
+  - '8'
+- factory: oRotate_ccw
+  input_symbols:
+  - '8'
+- factory: oReflect_hor
+  input_symbols:
+  - '81'
+- factory: oReflect_vert
+  input_symbols:
+  - '81'
+'9':
+- factory: oRotate_ccw
+  input_symbols:
+  - '91'
+- factory: oRotate_cw
+  input_symbols:
+  - '61'
+- factory: oReflect_hor
+  input_symbols:
+  - '901'
+- factory: oReflect_vert
+  input_symbols:
+  - '601'
+- factory: oMerger2
+  input_symbols:
+  - C2
+  - O
+- factory: oMerger2
+  input_symbols:
+  - O
+  - J
+- factory: oMerger2
+  input_symbols:
+  - O
+  - )
+- factory: oMerger2
+  input_symbols:
+  - C
+  - )
+- factory: oMerger4
+  input_symbols:
+  - N
+  - I
+  - N
+  - E
+- factory: oBend
+  input_symbols:
+  - P01
+- factory: oMerger2
+  input_symbols:
+  - '9'
+  - '0'
+  - I1
+- factory: oMerger4
+  input_symbols:
+  - '3'
+  - '2'
+  - '2'
+  - '2'
+- factory: oMerger4
+  input_symbols:
+  - '3'
+  - '3'
+  - '2'
+  - '1'
+- factory: oMerger3
+  input_symbols:
+  - '3'
+  - '3'
+  - '3'
+- factory: oMerger4
+  input_symbols:
+  - '3'
+  - '3'
+  - '3'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '4'
+  - '2'
+  - '2'
+  - '1'
+- factory: oMerger4
+  input_symbols:
+  - '4'
+  - '3'
+  - '1'
+  - '1'
+- factory: oMerger3
+  input_symbols:
+  - '4'
+  - '3'
+  - '2'
+- factory: oMerger4
+  input_symbols:
+  - '4'
+  - '3'
+  - '2'
+  - '0'
+- factory: oMerger3
+  input_symbols:
+  - '4'
+  - '4'
+  - '1'
+- factory: oMerger4
+  input_symbols:
+  - '4'
+  - '4'
+  - '1'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '5'
+  - '2'
+  - '1'
+  - '1'
+- factory: oMerger3
+  input_symbols:
+  - '5'
+  - '2'
+  - '2'
+- factory: oMerger4
+  input_symbols:
+  - '5'
+  - '2'
+  - '2'
+  - '0'
+- factory: oMerger3
+  input_symbols:
+  - '5'
+  - '3'
+  - '1'
+- factory: oMerger4
+  input_symbols:
+  - '5'
+  - '3'
+  - '1'
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - '5'
+  - '4'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '5'
+  - '4'
+- factory: oMerger3
+  input_symbols:
+  - '5'
+  - '4'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '5'
+  - '4'
+  - '0'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '6'
+  - '1'
+  - '1'
+  - '1'
+- factory: oMerger3
+  input_symbols:
+  - '6'
+  - '2'
+  - '1'
+- factory: oMerger4
+  input_symbols:
+  - '6'
+  - '2'
+  - '1'
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - '6'
+  - '3'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '6'
+  - '3'
+- factory: oMerger3
+  input_symbols:
+  - '6'
+  - '3'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '6'
+  - '3'
+  - '0'
+  - '0'
+- factory: oMerger3
+  input_symbols:
+  - '7'
+  - '1'
+  - '1'
+- factory: oMerger4
+  input_symbols:
+  - '7'
+  - '1'
+  - '1'
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - '7'
+  - '2'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '7'
+  - '2'
+- factory: oMerger3
+  input_symbols:
+  - '7'
+  - '2'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '7'
+  - '2'
+  - '0'
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - '8'
+  - '1'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '8'
+  - '1'
+- factory: oMerger3
+  input_symbols:
+  - '8'
+  - '1'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '8'
+  - '1'
+  - '0'
+  - '0'
+- factory: oMerger2
+  input_symbols:
+  - '9'
+  - '0'
+  - +
+- factory: oMerger2
+  input_symbols:
+  - '9'
+  - '0'
+- factory: oMerger3
+  input_symbols:
+  - '9'
+  - '0'
+  - '0'
+- factory: oMerger4
+  input_symbols:
+  - '9'
+  - '0'
+  - '0'
+  - '0'
+'901':
+- factory: oRotate_ccw
+  input_symbols:
+  - '911'
+- factory: oRotate_cw
+  input_symbols:
+  - '611'
+- factory: oReflect_hor
+  input_symbols:
+  - '9'
+- factory: oReflect_vert
+  input_symbols:
+  - '6'
+'91':
+- factory: oRotate_cw
+  input_symbols:
+  - '9'
+- factory: oRotate_ccw
+  input_symbols:
+  - '6'
+- factory: oReflect_hor
+  input_symbols:
+  - '611'
+- factory: oReflect_vert
+  input_symbols:
+  - '911'
+'911':
+- factory: oRotate_cw
+  input_symbols:
+  - '901'
+- factory: oRotate_ccw
+  input_symbols:
+  - '601'
+- factory: oReflect_hor
+  input_symbols:
+  - '61'
+- factory: oReflect_vert
+  input_symbols:
+  - '91'
+'=':
+- factory: oRotate_ccw
+  input_symbols:
+  - =1
+- factory: oRotate_cw
+  input_symbols:
+  - =1
+- factory: oReflect_hor
+  input_symbols:
+  - '='
+- factory: oReflect_vert
+  input_symbols:
+  - '='
+- factory: oMerger2
+  input_symbols:
+  - I1
+  - I1
+=1:
+- factory: oRotate_cw
+  input_symbols:
+  - '='
+- factory: oRotate_ccw
+  input_symbols:
+  - '='
+- factory: oReflect_hor
+  input_symbols:
+  - =1
+- factory: oReflect_vert
+  input_symbols:
+  - =1
+'@':
+- factory: oRotate_ccw
+  input_symbols:
+  - '@1'
+- factory: oRotate_cw
+  input_symbols:
+  - '@3'
+- factory: oReflect_hor
+  input_symbols:
+  - '@01'
+- factory: oReflect_vert
+  input_symbols:
+  - '@21'
+- factory: oMerger2
+  input_symbols:
+  - A
+  - O
+- factory: oMerger2
+  input_symbols:
+  - A
+  - C3
+- factory: oMerger2
+  input_symbols:
+  - O
+  - Q
+'@01':
+- factory: oRotate_cw
+  input_symbols:
+  - '@31'
+- factory: oRotate_ccw
+  input_symbols:
+  - '@11'
+- factory: oReflect_hor
+  input_symbols:
+  - '@'
+- factory: oReflect_vert
+  input_symbols:
+  - '@2'
+'@1':
+- factory: oRotate_cw
+  input_symbols:
+  - '@'
+- factory: oRotate_ccw
+  input_symbols:
+  - '@2'
+- factory: oReflect_hor
+  input_symbols:
+  - '@31'
+- factory: oReflect_vert
+  input_symbols:
+  - '@11'
+'@11':
+- factory: oRotate_cw
+  input_symbols:
+  - '@01'
+- factory: oRotate_ccw
+  input_symbols:
+  - '@21'
+- factory: oReflect_hor
+  input_symbols:
+  - '@3'
+- factory: oReflect_vert
+  input_symbols:
+  - '@1'
+'@2':
+- factory: oRotate_cw
+  input_symbols:
+  - '@1'
+- factory: oRotate_ccw
+  input_symbols:
+  - '@3'
+- factory: oReflect_hor
+  input_symbols:
+  - '@21'
+- factory: oReflect_vert
+  input_symbols:
+  - '@01'
+'@21':
+- factory: oRotate_cw
+  input_symbols:
+  - '@11'
+- factory: oRotate_ccw
+  input_symbols:
+  - '@31'
+- factory: oReflect_hor
+  input_symbols:
+  - '@2'
+- factory: oReflect_vert
+  input_symbols:
+  - '@'
+'@3':
+- factory: oRotate_cw
+  input_symbols:
+  - '@2'
+- factory: oRotate_ccw
+  input_symbols:
+  - '@'
+- factory: oReflect_hor
+  input_symbols:
+  - '@11'
+- factory: oReflect_vert
+  input_symbols:
+  - '@31'
+'@31':
+- factory: oRotate_cw
+  input_symbols:
+  - '@21'
+- factory: oRotate_ccw
+  input_symbols:
+  - '@01'
+- factory: oReflect_hor
+  input_symbols:
+  - '@1'
+- factory: oReflect_vert
+  input_symbols:
+  - '@3'
+A:
+- factory: oRotate_ccw
+  input_symbols:
+  - A1
+- factory: oRotate_cw
+  input_symbols:
+  - A3
+- factory: oReflect_hor
+  input_symbols:
+  - A
+- factory: oReflect_vert
+  input_symbols:
+  - A2
+- factory: oMerger2
+  input_symbols:
+  - I1
+  - V2
+- factory: oMerger2
+  input_symbols:
+  - I1
+  - U2
+- factory: oMerger2
+  input_symbols:
+  - H
+  - I1
+- factory: oMerger3
+  input_symbols:
+  - I1
+  - L2
+  - L21
+- factory: oMerger3
+  input_symbols:
+  - I
+  - I1
+  - L2
+- factory: oMerger3
+  input_symbols:
+  - I
+  - I1
+  - L21
+- factory: oMerger3
+  input_symbols:
+  - I
+  - I1
+  - T1
+- factory: oMerger3
+  input_symbols:
+  - I
+  - I1
+  - T3
+- factory: oBend
+  input_symbols:
+  - H
+A1:
+- factory: oRotate_cw
+  input_symbols:
+  - A
+- factory: oRotate_ccw
+  input_symbols:
+  - A2
+- factory: oReflect_hor
+  input_symbols:
+  - A3
+- factory: oReflect_vert
+  input_symbols:
+  - A1
+A2:
+- factory: oRotate_cw
+  input_symbols:
+  - A1
+- factory: oRotate_ccw
+  input_symbols:
+  - A3
+- factory: oReflect_hor
+  input_symbols:
+  - A2
+- factory: oReflect_vert
+  input_symbols:
+  - A
+A3:
+- factory: oRotate_cw
+  input_symbols:
+  - A2
+- factory: oRotate_ccw
+  input_symbols:
+  - A
+- factory: oReflect_hor
+  input_symbols:
+  - A1
+- factory: oReflect_vert
+  input_symbols:
+  - A3
+B:
+- factory: oRotate_ccw
+  input_symbols:
+  - B1
+- factory: oRotate_cw
+  input_symbols:
+  - B3
+- factory: oReflect_hor
+  input_symbols:
+  - B2
+- factory: oReflect_vert
+  input_symbols:
+  - B
+- factory: oMerger2
+  input_symbols:
+  - D
+  - D
+- factory: oMerger2
+  input_symbols:
+  - I
+  - '3'
+- factory: oMerger2
+  input_symbols:
+  - C2
+  - P
+- factory: oMerger2
+  input_symbols:
+  - P
+  - )
+- factory: oMerger2
+  input_symbols:
+  - C2
+  - P21
+- factory: oMerger2
+  input_symbols:
+  - P21
+  - )
+- factory: oMerger2
+  input_symbols:
+  - P
+  - U1
+- factory: oMerger2
+  input_symbols:
+  - R
+  - C1
+- factory: oMerger2
+  input_symbols:
+  - R
+  - U
+- factory: oMerger2
+  input_symbols:
+  - P21
+  - U1
+- factory: oMerger2
+  input_symbols:
+  - I
+  - W1
+- factory: oMerger3
+  input_symbols:
+  - C2
+  - D
+  - I
+- factory: oMerger3
+  input_symbols:
+  - )
+  - D
+  - I
+- factory: oMerger3
+  input_symbols:
+  - U1
+  - D
+  - I
+- factory: oMerger3
+  input_symbols:
+  - C2
+  - C2
+  - I
+- factory: oMerger3
+  input_symbols:
+  - C2
+  - I
+  - )
+- factory: oMerger3
+  input_symbols:
+  - C2
+  - I
+  - U1
+- factory: oMerger3
+  input_symbols:
+  - )
+  - I
+  - U1
+- factory: oMerger3
+  input_symbols:
+  - C2
+  - C2
+  - E
+- factory: oMerger3
+  input_symbols:
+  - I
+  - I
+  - '3'
+- factory: oMerger3
+  input_symbols:
+  - I
+  - U1
+  - U1
+- factory: oMerger3
+  input_symbols:
+  - T1
+  - J1
+  - J11
+- factory: oMerger3
+  input_symbols:
+  - E
+  - U1
+  - U1
+- factory: oMerger3
+  input_symbols:
+  - C2
+  - E
+  - U1
+- factory: oMerger3
+  input_symbols:
+  - C1
+  - C3
+  - K
+- factory: oMerger3
+  input_symbols:
+  - U
+  - U2
+  - K
+- factory: oMerger3
+  input_symbols:
+  - U
+  - C3
+  - K
+- factory: oMerger3
+  input_symbols:
+  - C1
+  - U2
+  - K
+- factory: oMerger3
+  input_symbols:
+  - I1
+  - I1
+  - K
+- factory: oMerger4
+  input_symbols:
+  - C2
+  - C2
+  - I
+  - I
+- factory: oMerger4
+  input_symbols:
+  - C2
+  - I
+  - I
+  - U1
+- factory: oMerger4
+  input_symbols:
+  - I
+  - I
+  - U1
+  - U1
+- factory: oMerger4
+  input_symbols:
+  - I
+  - I
+  - V1
+  - V1
+B1:
+- factory: oRotate_cw
+  input_symbols:
+  - B
+- factory: oRotate_ccw
+  input_symbols:
+  - B2
+- factory: oReflect_hor
+  input_symbols:
+  - B1
+- factory: oReflect_vert
+  input_symbols:
+  - B3
+B2:
+- factory: oRotate_cw
+  input_symbols:
+  - B1
+- factory: oRotate_ccw
+  input_symbols:
+  - B3
+- factory: oReflect_hor
+  input_symbols:
+  - B
+- factory: oReflect_vert
+  input_symbols:
+  - B2
+B3:
+- factory: oRotate_cw
+  input_symbols:
+  - B2
+- factory: oRotate_ccw
+  input_symbols:
+  - B
+- factory: oReflect_hor
+  input_symbols:
+  - B3
+- factory: oReflect_vert
+  input_symbols:
+  - B1
+C:
+- factory: oRotate_ccw
+  input_symbols:
+  - C1
+- factory: oRotate_cw
+  input_symbols:
+  - C3
+- factory: oReflect_hor
+  input_symbols:
+  - C2
+- factory: oReflect_vert
+  input_symbols:
+  - C
+- factory: oMerger2
+  input_symbols:
+  - I1
+  - L
+- factory: oBend
+  input_symbols:
+  - I
+- factory: oBend
+  input_symbols:
+  - V3
+C1:
+- factory: oRotate_cw
+  input_symbols:
+  - C
+- factory: oRotate_ccw
+  input_symbols:
+  - C2
+- factory: oReflect_hor
+  input_symbols:
+  - C1
+- factory: oReflect_vert
+  input_symbols:
+  - C3
+C2:
+- factory: oRotate_cw
+  input_symbols:
+  - C1
+- factory: oRotate_ccw
+  input_symbols:
+  - C3
+- factory: oReflect_hor
+  input_symbols:
+  - C
+- factory: oReflect_vert
+  input_symbols:
+  - C2
+C3:
+- factory: oRotate_cw
+  input_symbols:
+  - C2
+- factory: oRotate_ccw
+  input_symbols:
+  - C
+- factory: oReflect_hor
+  input_symbols:
+  - C3
+- factory: oReflect_vert
+  input_symbols:
+  - C1
+D:
+- factory: oRotate_ccw
+  input_symbols:
+  - D1
+- factory: oRotate_cw
+  input_symbols:
+  - D3
+- factory: oReflect_hor
+  input_symbols:
+  - D2
+- factory: oReflect_vert
+  input_symbols:
+  - D
+- factory: oMerger2
+  input_symbols:
+  - C2
+  - I
+- factory: oMerger2
+  input_symbols:
+  - I
+  - )
+- factory: oMerger2
+  input_symbols:
+  - I
+  - U1
+D1:
+- factory: oRotate_cw
+  input_symbols:
+  - D
+- factory: oRotate_ccw
+  input_symbols:
+  - D2
+- factory: oReflect_hor
+  input_symbols:
+  - D1
+- factory: oReflect_vert
+  input_symbols:
+  - D3
+D2:
+- factory: oRotate_cw
+  input_symbols:
+  - D1
+- factory: oRotate_ccw
+  input_symbols:
+  - D3
+- factory: oReflect_hor
+  input_symbols:
+  - D
+- factory: oReflect_vert
+  input_symbols:
+  - D2
+D3:
+- factory: oRotate_cw
+  input_symbols:
+  - D2
+- factory: oRotate_ccw
+  input_symbols:
+  - D
+- factory: oReflect_hor
+  input_symbols:
+  - D3
+- factory: oReflect_vert
+  input_symbols:
+  - D1
+E:
+- factory: oRotate_ccw
+  input_symbols:
+  - E1
+- factory: oRotate_cw
+  input_symbols:
+  - E3
+- factory: oReflect_hor
+  input_symbols:
+  - E2
+- factory: oReflect_vert
+  input_symbols:
+  - E
+- factory: oMerger2
+  input_symbols:
+  - F
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - F21
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - L
+  - '='
+- factory: oMerger2
+  input_symbols:
+  - L
+  - F
+- factory: oMerger2
+  input_symbols:
+  - U3
+  - U3
+- factory: oMerger3
+  input_symbols:
+  - I1
+  - I1
+  - L
+- factory: oMerger3
+  input_symbols:
+  - I1
+  - I1
+  - L21
+- factory: oMerger3
+  input_symbols:
+  - I1
+  - L
+  - L21
+- factory: oMerger3
+  input_symbols:
+  - I1
+  - I1
+  - T1
+- factory: oMerger3
+  input_symbols:
+  - L
+  - L3
+  - T1
+- factory: oMerger3
+  input_symbols:
+  - L
+  - L21
+  - T1
+- factory: oMerger3
+  input_symbols:
+  - L31
+  - L3
+  - T1
+- factory: oMerger3
+  input_symbols:
+  - L31
+  - L21
+  - T1
+- factory: oMerger3
+  input_symbols:
+  - '='
+  - I1
+  - I
+- factory: oMerger4
+  input_symbols:
+  - I
+  - I1
+  - I1
+  - I1
+E1:
+- factory: oRotate_cw
+  input_symbols:
+  - E
+- factory: oRotate_ccw
+  input_symbols:
+  - E2
+- factory: oReflect_hor
+  input_symbols:
+  - E1
+- factory: oReflect_vert
+  input_symbols:
+  - E3
+E2:
+- factory: oRotate_cw
+  input_symbols:
+  - E1
+- factory: oRotate_ccw
+  input_symbols:
+  - E3
+- factory: oReflect_hor
+  input_symbols:
+  - E
+- factory: oReflect_vert
+  input_symbols:
+  - E2
+E3:
+- factory: oRotate_cw
+  input_symbols:
+  - E2
+- factory: oRotate_ccw
+  input_symbols:
+  - E
+- factory: oReflect_hor
+  input_symbols:
+  - E3
+- factory: oReflect_vert
+  input_symbols:
+  - E1
+F:
+- factory: oRotate_ccw
+  input_symbols:
+  - F1
+- factory: oRotate_cw
+  input_symbols:
+  - F3
+- factory: oReflect_hor
+  input_symbols:
+  - F01
+- factory: oReflect_vert
+  input_symbols:
+  - F21
+- factory: oMerger2
+  input_symbols:
+  - L21
+  - L3
+- factory: oMerger2
+  input_symbols:
+  - L21
+  - L21
+- factory: oMerger2
+  input_symbols:
+  - L3
+  - L3
+- factory: oMerger2
+  input_symbols:
+  - I1
+  - T1
+- factory: oMerger2
+  input_symbols:
+  - L21
+  - T1
+- factory: oMerger2
+  input_symbols:
+  - L3
+  - T1
+- factory: oMerger2
+  input_symbols:
+  - I
+  - U3
+- factory: oMerger2
+  input_symbols:
+  - I
+  - '='
+- factory: oMerger3
+  input_symbols:
+  - I
+  - I1
+  - I1
+F01:
+- factory: oRotate_cw
+  input_symbols:
+  - F31
+- factory: oRotate_ccw
+  input_symbols:
+  - F11
+- factory: oReflect_hor
+  input_symbols:
+  - F
+- factory: oReflect_vert
+  input_symbols:
+  - F2
+F1:
+- factory: oRotate_cw
+  input_symbols:
+  - F
+- factory: oRotate_ccw
+  input_symbols:
+  - F2
+- factory: oReflect_hor
+  input_symbols:
+  - F31
+- factory: oReflect_vert
+  input_symbols:
+  - F11
+F11:
+- factory: oRotate_cw
+  input_symbols:
+  - F01
+- factory: oRotate_ccw
+  input_symbols:
+  - F21
+- factory: oReflect_hor
+  input_symbols:
+  - F3
+- factory: oReflect_vert
+  input_symbols:
+  - F1
+F2:
+- factory: oRotate_cw
+  input_symbols:
+  - F1
+- factory: oRotate_ccw
+  input_symbols:
+  - F3
+- factory: oReflect_hor
+  input_symbols:
+  - F21
+- factory: oReflect_vert
+  input_symbols:
+  - F01
+F21:
+- factory: oRotate_cw
+  input_symbols:
+  - F11
+- factory: oRotate_ccw
+  input_symbols:
+  - F31
+- factory: oReflect_hor
+  input_symbols:
+  - F2
+- factory: oReflect_vert
+  input_symbols:
+  - F
+F3:
+- factory: oRotate_cw
+  input_symbols:
+  - F2
+- factory: oRotate_ccw
+  input_symbols:
+  - F
+- factory: oReflect_hor
+  input_symbols:
+  - F11
+- factory: oReflect_vert
+  input_symbols:
+  - F31
+F31:
+- factory: oRotate_cw
+  input_symbols:
+  - F21
+- factory: oRotate_ccw
+  input_symbols:
+  - F01
+- factory: oReflect_hor
+  input_symbols:
+  - F1
+- factory: oReflect_vert
+  input_symbols:
+  - F3
+G:
+- factory: oRotate_ccw
+  input_symbols:
+  - G1
+- factory: oRotate_cw
+  input_symbols:
+  - G3
+- factory: oReflect_hor
+  input_symbols:
+  - G01
+- factory: oReflect_vert
+  input_symbols:
+  - G21
+- factory: oMerger2
+  input_symbols:
+  - C
+  - L2
+- factory: oMerger3
+  input_symbols:
+  - C
+  - I
+  - I1
+G01:
+- factory: oRotate_cw
+  input_symbols:
+  - G31
+- factory: oRotate_ccw
+  input_symbols:
+  - G11
+- factory: oReflect_hor
+  input_symbols:
+  - G
+- factory: oReflect_vert
+  input_symbols:
+  - G2
+G1:
+- factory: oRotate_cw
+  input_symbols:
+  - G
+- factory: oRotate_ccw
+  input_symbols:
+  - G2
+- factory: oReflect_hor
+  input_symbols:
+  - G31
+- factory: oReflect_vert
+  input_symbols:
+  - G11
+G11:
+- factory: oRotate_cw
+  input_symbols:
+  - G01
+- factory: oRotate_ccw
+  input_symbols:
+  - G21
+- factory: oReflect_hor
+  input_symbols:
+  - G3
+- factory: oReflect_vert
+  input_symbols:
+  - G1
+G2:
+- factory: oRotate_cw
+  input_symbols:
+  - G1
+- factory: oRotate_ccw
+  input_symbols:
+  - G3
+- factory: oReflect_hor
+  input_symbols:
+  - G21
+- factory: oReflect_vert
+  input_symbols:
+  - G01
+G21:
+- factory: oRotate_cw
+  input_symbols:
+  - G11
+- factory: oRotate_ccw
+  input_symbols:
+  - G31
+- factory: oReflect_hor
+  input_symbols:
+  - G2
+- factory: oReflect_vert
+  input_symbols:
+  - G
+G3:
+- factory: oRotate_cw
+  input_symbols:
+  - G2
+- factory: oRotate_ccw
+  input_symbols:
+  - G
+- factory: oReflect_hor
+  input_symbols:
+  - G11
+- factory: oReflect_vert
+  input_symbols:
+  - G31
+G31:
+- factory: oRotate_cw
+  input_symbols:
+  - G21
+- factory: oRotate_ccw
+  input_symbols:
+  - G01
+- factory: oReflect_hor
+  input_symbols:
+  - G1
+- factory: oReflect_vert
+  input_symbols:
+  - G3
+H:
+- factory: oRotate_ccw
+  input_symbols:
+  - H1
+- factory: oRotate_cw
+  input_symbols:
+  - H1
+- factory: oReflect_hor
+  input_symbols:
+  - H
+- factory: oReflect_vert
+  input_symbols:
+  - H
+- factory: oMerger2
+  input_symbols:
+  - I
+  - T1
+- factory: oMerger2
+  input_symbols:
+  - I
+  - T3
+- factory: oMerger2
+  input_symbols:
+  - =1
+  - I1
+- factory: oMerger2
+  input_symbols:
+  - T1
+  - T3
+- factory: oMerger2
+  input_symbols:
+  - U
+  - U2
+- factory: oMerger2
+  input_symbols:
+  - C3
+  - U
+- factory: oMerger2
+  input_symbols:
+  - C1
+  - U2
+- factory: oMerger2
+  input_symbols:
+  - '4'
+  - I
+- factory: oMerger3
+  input_symbols:
+  - I
+  - I
+  - I1
+- factory: oMerger3
+  input_symbols:
+  - I
+  - I
+  - U
+- factory: oMerger4
+  input_symbols:
+  - I
+  - I
+  - I
+  - L
+- factory: oMerger4
+  input_symbols:
+  - I
+  - I
+  - I
+  - L1
+- factory: oMerger4
+  input_symbols:
+  - I
+  - I
+  - I
+  - L2
+- factory: oMerger4
+  input_symbols:
+  - I
+  - I
+  - I
+  - L3
+- factory: oMerger4
+  input_symbols:
+  - I
+  - I
+  - I
+  - L01
+- factory: oMerger4
+  input_symbols:
+  - I
+  - I
+  - I
+  - L11
+- factory: oMerger4
+  input_symbols:
+  - I
+  - I
+  - I
+  - L21
+- factory: oMerger4
+  input_symbols:
+  - I
+  - I
+  - I
+  - L31
+H1:
+- factory: oRotate_cw
+  input_symbols:
+  - H
+- factory: oRotate_ccw
+  input_symbols:
+  - H
+- factory: oReflect_hor
+  input_symbols:
+  - H1
+- factory: oReflect_vert
+  input_symbols:
+  - H1
+I:
+- factory: oRotate_ccw
+  input_symbols:
+  - I1
+- factory: oRotate_cw
+  input_symbols:
+  - I1
+- factory: oReflect_hor
+  input_symbols:
+  - I
+- factory: oReflect_vert
+  input_symbols:
+  - I
+- factory: oIFactory
+  input_symbols: []
+I1:
+- factory: oRotate_cw
+  input_symbols:
+  - I
+- factory: oRotate_ccw
+  input_symbols:
+  - I
+- factory: oReflect_hor
+  input_symbols:
+  - I1
+- factory: oReflect_vert
+  input_symbols:
+  - I1
+J:
+- factory: oRotate_ccw
+  input_symbols:
+  - J1
+- factory: oRotate_cw
+  input_symbols:
+  - J3
+- factory: oReflect_hor
+  input_symbols:
+  - J01
+- factory: oReflect_vert
+  input_symbols:
+  - J21
+- factory: oMerger2
+  input_symbols:
+  - I
+  - U
+- factory: oMerger2
+  input_symbols:
+  - C1
+  - I
+- factory: oBend
+  input_symbols:
+  - L01
+J01:
+- factory: oRotate_cw
+  input_symbols:
+  - J31
+- factory: oRotate_ccw
+  input_symbols:
+  - J11
+- factory: oReflect_hor
+  input_symbols:
+  - J
+- factory: oReflect_vert
+  input_symbols:
+  - J2
+J1:
+- factory: oRotate_cw
+  input_symbols:
+  - J
+- factory: oRotate_ccw
+  input_symbols:
+  - J2
+- factory: oReflect_hor
+  input_symbols:
+  - J31
+- factory: oReflect_vert
+  input_symbols:
+  - J11
+J11:
+- factory: oRotate_cw
+  input_symbols:
+  - J01
+- factory: oRotate_ccw
+  input_symbols:
+  - J21
+- factory: oReflect_hor
+  input_symbols:
+  - J3
+- factory: oReflect_vert
+  input_symbols:
+  - J1
+J2:
+- factory: oRotate_cw
+  input_symbols:
+  - J1
+- factory: oRotate_ccw
+  input_symbols:
+  - J3
+- factory: oReflect_hor
+  input_symbols:
+  - J21
+- factory: oReflect_vert
+  input_symbols:
+  - J01
+J21:
+- factory: oRotate_cw
+  input_symbols:
+  - J11
+- factory: oRotate_ccw
+  input_symbols:
+  - J31
+- factory: oReflect_hor
+  input_symbols:
+  - J2
+- factory: oReflect_vert
+  input_symbols:
+  - J
+J3:
+- factory: oRotate_cw
+  input_symbols:
+  - J2
+- factory: oRotate_ccw
+  input_symbols:
+  - J
+- factory: oReflect_hor
+  input_symbols:
+  - J11
+- factory: oReflect_vert
+  input_symbols:
+  - J31
+J31:
+- factory: oRotate_cw
+  input_symbols:
+  - J21
+- factory: oRotate_ccw
+  input_symbols:
+  - J01
+- factory: oReflect_hor
+  input_symbols:
+  - J1
+- factory: oReflect_vert
+  input_symbols:
+  - J3
+K:
+- factory: oRotate_ccw
+  input_symbols:
+  - K1
+- factory: oRotate_cw
+  input_symbols:
+  - K3
+- factory: oReflect_hor
+  input_symbols:
+  - K2
+- factory: oReflect_vert
+  input_symbols:
+  - K
+- factory: oMerger2
+  input_symbols:
+  - I
+  - V3
+- factory: oBend
+  input_symbols:
+  - X
+K1:
+- factory: oRotate_cw
+  input_symbols:
+  - K
+- factory: oRotate_ccw
+  input_symbols:
+  - K2
+- factory: oReflect_hor
+  input_symbols:
+  - K1
+- factory: oReflect_vert
+  input_symbols:
+  - K3
+K2:
+- factory: oRotate_cw
+  input_symbols:
+  - K1
+- factory: oRotate_ccw
+  input_symbols:
+  - K3
+- factory: oReflect_hor
+  input_symbols:
+  - K
+- factory: oReflect_vert
+  input_symbols:
+  - K2
+K3:
+- factory: oRotate_cw
+  input_symbols:
+  - K2
+- factory: oRotate_ccw
+  input_symbols:
+  - K
+- factory: oReflect_hor
+  input_symbols:
+  - K3
+- factory: oReflect_vert
+  input_symbols:
+  - K1
+L:
+- factory: oRotate_ccw
+  input_symbols:
+  - L1
+- factory: oRotate_cw
+  input_symbols:
+  - L3
+- factory: oReflect_hor
+  input_symbols:
+  - L01
+- factory: oReflect_vert
+  input_symbols:
+  - L21
+- factory: oMerger2
+  input_symbols:
+  - I
+  - I1
+L01:
+- factory: oRotate_cw
+  input_symbols:
+  - L31
+- factory: oRotate_ccw
+  input_symbols:
+  - L11
+- factory: oReflect_hor
+  input_symbols:
+  - L
+- factory: oReflect_vert
+  input_symbols:
+  - L2
+L1:
+- factory: oRotate_cw
+  input_symbols:
+  - L
+- factory: oRotate_ccw
+  input_symbols:
+  - L2
+- factory: oReflect_hor
+  input_symbols:
+  - L31
+- factory: oReflect_vert
+  input_symbols:
+  - L11
+L11:
+- factory: oRotate_cw
+  input_symbols:
+  - L01
+- factory: oRotate_ccw
+  input_symbols:
+  - L21
+- factory: oReflect_hor
+  input_symbols:
+  - L3
+- factory: oReflect_vert
+  input_symbols:
+  - L1
+L2:
+- factory: oRotate_cw
+  input_symbols:
+  - L1
+- factory: oRotate_ccw
+  input_symbols:
+  - L3
+- factory: oReflect_hor
+  input_symbols:
+  - L21
+- factory: oReflect_vert
+  input_symbols:
+  - L01
+L21:
+- factory: oRotate_cw
+  input_symbols:
+  - L11
+- factory: oRotate_ccw
+  input_symbols:
+  - L31
+- factory: oReflect_hor
+  input_symbols:
+  - L2
+- factory: oReflect_vert
+  input_symbols:
+  - L
+L3:
+- factory: oRotate_cw
+  input_symbols:
+  - L2
+- factory: oRotate_ccw
+  input_symbols:
+  - L
+- factory: oReflect_hor
+  input_symbols:
+  - L11
+- factory: oReflect_vert
+  input_symbols:
+  - L31
+L31:
+- factory: oRotate_cw
+  input_symbols:
+  - L21
+- factory: oRotate_ccw
+  input_symbols:
+  - L01
+- factory: oReflect_hor
+  input_symbols:
+  - L1
+- factory: oReflect_vert
+  input_symbols:
+  - L3
+M:
+- factory: oRotate_ccw
+  input_symbols:
+  - M1
+- factory: oRotate_cw
+  input_symbols:
+  - M3
+- factory: oReflect_hor
+  input_symbols:
+  - M
+- factory: oReflect_vert
+  input_symbols:
+  - M2
+- factory: oMerger2
+  input_symbols:
+  - I
+  - N
+- factory: oMerger2
+  input_symbols:
+  - V2
+  - V2
+- factory: oMerger3
+  input_symbols:
+  - I
+  - I
+  - V
+- factory: oBend
+  input_symbols:
+  - W2
+M1:
+- factory: oRotate_cw
+  input_symbols:
+  - M
+- factory: oRotate_ccw
+  input_symbols:
+  - M2
+- factory: oReflect_hor
+  input_symbols:
+  - M3
+- factory: oReflect_vert
+  input_symbols:
+  - M1
+M2:
+- factory: oRotate_cw
+  input_symbols:
+  - M1
+- factory: oRotate_ccw
+  input_symbols:
+  - M3
+- factory: oReflect_hor
+  input_symbols:
+  - M2
+- factory: oReflect_vert
+  input_symbols:
+  - M
+M3:
+- factory: oRotate_cw
+  input_symbols:
+  - M2
+- factory: oRotate_ccw
+  input_symbols:
+  - M
+- factory: oReflect_hor
+  input_symbols:
+  - M1
+- factory: oReflect_vert
+  input_symbols:
+  - M3
+N:
+- factory: oRotate_ccw
+  input_symbols:
+  - N1
+- factory: oRotate_cw
+  input_symbols:
+  - N1
+- factory: oReflect_hor
+  input_symbols:
+  - N01
+- factory: oReflect_vert
+  input_symbols:
+  - N01
+- factory: oMerger2
+  input_symbols:
+  - I
+  - V2
+- factory: oMerger3
+  input_symbols:
+  - I
+  - I
+  - I
+N01:
+- factory: oRotate_ccw
+  input_symbols:
+  - N11
+- factory: oRotate_cw
+  input_symbols:
+  - N11
+- factory: oReflect_hor
+  input_symbols:
+  - N
+- factory: oReflect_vert
+  input_symbols:
+  - N
+N1:
+- factory: oRotate_cw
+  input_symbols:
+  - N
+- factory: oRotate_ccw
+  input_symbols:
+  - N
+- factory: oReflect_hor
+  input_symbols:
+  - N11
+- factory: oReflect_vert
+  input_symbols:
+  - N11
+N11:
+- factory: oRotate_cw
+  input_symbols:
+  - N01
+- factory: oRotate_ccw
+  input_symbols:
+  - N01
+- factory: oReflect_hor
+  input_symbols:
+  - N1
+- factory: oReflect_vert
+  input_symbols:
+  - N1
+O:
+- factory: oRotate_cw
+  input_symbols:
+  - O
+- factory: oRotate_ccw
+  input_symbols:
+  - O
+- factory: oReflect_hor
+  input_symbols:
+  - O
+- factory: oReflect_vert
+  input_symbols:
+  - O
+- factory: oMerger2
+  input_symbols:
+  - C1
+  - C3
+- factory: oMerger2
+  input_symbols:
+  - C
+  - C2
+- factory: oBend
+  input_symbols:
+  - D
+P:
+- factory: oRotate_ccw
+  input_symbols:
+  - P1
+- factory: oRotate_cw
+  input_symbols:
+  - P3
+- factory: oReflect_hor
+  input_symbols:
+  - P01
+- factory: oReflect_vert
+  input_symbols:
+  - P21
+- factory: oMerger2
+  input_symbols:
+  - C2
+  - F
+- factory: oMerger2
+  input_symbols:
+  - F
+  - U1
+- factory: oMerger2
+  input_symbols:
+  - J2
+  - C2
+- factory: oMerger2
+  input_symbols:
+  - D
+  - I
+- factory: oMerger3
+  input_symbols:
+  - C2
+  - I
+  - I
+- factory: oMerger3
+  input_symbols:
+  - I
+  - I
+  - U1
+P01:
+- factory: oRotate_cw
+  input_symbols:
+  - P31
+- factory: oRotate_ccw
+  input_symbols:
+  - P11
+- factory: oReflect_hor
+  input_symbols:
+  - P
+- factory: oReflect_vert
+  input_symbols:
+  - P2
+P1:
+- factory: oRotate_cw
+  input_symbols:
+  - P
+- factory: oRotate_ccw
+  input_symbols:
+  - P2
+- factory: oReflect_hor
+  input_symbols:
+  - P31
+- factory: oReflect_vert
+  input_symbols:
+  - P11
+P11:
+- factory: oRotate_cw
+  input_symbols:
+  - P01
+- factory: oRotate_ccw
+  input_symbols:
+  - P21
+- factory: oReflect_hor
+  input_symbols:
+  - P3
+- factory: oReflect_vert
+  input_symbols:
+  - P1
+P2:
+- factory: oRotate_cw
+  input_symbols:
+  - P1
+- factory: oRotate_ccw
+  input_symbols:
+  - P3
+- factory: oReflect_hor
+  input_symbols:
+  - P21
+- factory: oReflect_vert
+  input_symbols:
+  - P01
+P21:
+- factory: oRotate_cw
+  input_symbols:
+  - P11
+- factory: oRotate_ccw
+  input_symbols:
+  - P31
+- factory: oReflect_hor
+  input_symbols:
+  - P2
+- factory: oReflect_vert
+  input_symbols:
+  - P
+P3:
+- factory: oRotate_cw
+  input_symbols:
+  - P2
+- factory: oRotate_ccw
+  input_symbols:
+  - P
+- factory: oReflect_hor
+  input_symbols:
+  - P11
+- factory: oReflect_vert
+  input_symbols:
+  - P31
+P31:
+- factory: oRotate_cw
+  input_symbols:
+  - P21
+- factory: oRotate_ccw
+  input_symbols:
+  - P01
+- factory: oReflect_hor
+  input_symbols:
+  - P1
+- factory: oReflect_vert
+  input_symbols:
+  - P3
+Q:
+- factory: oRotate_ccw
+  input_symbols:
+  - Q1
+- factory: oRotate_cw
+  input_symbols:
+  - Q3
+- factory: oReflect_hor
+  input_symbols:
+  - Q01
+- factory: oReflect_vert
+  input_symbols:
+  - Q21
+- factory: oMerger2
+  input_symbols:
+  - I
+  - O
+- factory: oMerger2
+  input_symbols:
+  - I1
+  - O
+- factory: oMerger3
+  input_symbols:
+  - C
+  - C2
+  - I
+- factory: oMerger3
+  input_symbols:
+  - C
+  - C2
+  - I1
+- factory: oMerger3
+  input_symbols:
+  - C1
+  - C3
+  - I
+- factory: oMerger3
+  input_symbols:
+  - C1
+  - C3
+  - I1
+Q01:
+- factory: oRotate_cw
+  input_symbols:
+  - Q31
+- factory: oRotate_ccw
+  input_symbols:
+  - Q11
+- factory: oReflect_hor
+  input_symbols:
+  - Q
+- factory: oReflect_vert
+  input_symbols:
+  - Q2
+Q1:
+- factory: oRotate_cw
+  input_symbols:
+  - Q
+- factory: oRotate_ccw
+  input_symbols:
+  - Q2
+- factory: oReflect_hor
+  input_symbols:
+  - Q31
+- factory: oReflect_vert
+  input_symbols:
+  - Q11
+Q11:
+- factory: oRotate_cw
+  input_symbols:
+  - Q01
+- factory: oRotate_ccw
+  input_symbols:
+  - Q21
+- factory: oReflect_hor
+  input_symbols:
+  - Q3
+- factory: oReflect_vert
+  input_symbols:
+  - Q1
+Q2:
+- factory: oRotate_cw
+  input_symbols:
+  - Q1
+- factory: oRotate_ccw
+  input_symbols:
+  - Q3
+- factory: oReflect_hor
+  input_symbols:
+  - Q21
+- factory: oReflect_vert
+  input_symbols:
+  - Q01
+Q21:
+- factory: oRotate_cw
+  input_symbols:
+  - Q11
+- factory: oRotate_ccw
+  input_symbols:
+  - Q31
+- factory: oReflect_hor
+  input_symbols:
+  - Q2
+- factory: oReflect_vert
+  input_symbols:
+  - Q
+Q3:
+- factory: oRotate_cw
+  input_symbols:
+  - Q2
+- factory: oRotate_ccw
+  input_symbols:
+  - Q
+- factory: oReflect_hor
+  input_symbols:
+  - Q11
+- factory: oReflect_vert
+  input_symbols:
+  - Q31
+Q31:
+- factory: oRotate_cw
+  input_symbols:
+  - Q21
+- factory: oRotate_ccw
+  input_symbols:
+  - Q01
+- factory: oReflect_hor
+  input_symbols:
+  - Q1
+- factory: oReflect_vert
+  input_symbols:
+  - Q3
+R:
+- factory: oRotate_ccw
+  input_symbols:
+  - R1
+- factory: oRotate_cw
+  input_symbols:
+  - R3
+- factory: oReflect_hor
+  input_symbols:
+  - R01
+- factory: oReflect_vert
+  input_symbols:
+  - R21
+- factory: oMerger2
+  input_symbols:
+  - I
+  - P
+- factory: oMerger2
+  input_symbols:
+  - D
+  - V2
+- factory: oMerger2
+  input_symbols:
+  - I
+  - Q
+- factory: oMerger2
+  input_symbols:
+  - C3
+  - K
+- factory: oMerger2
+  input_symbols:
+  - C2
+  - Y2
+- factory: oMerger3
+  input_symbols:
+  - C2
+  - I
+  - V2
+- factory: oMerger3
+  input_symbols:
+  - I
+  - U1
+  - V2
+- factory: oMerger3
+  input_symbols:
+  - D
+  - I
+  - I
+- factory: oMerger4
+  input_symbols:
+  - C2
+  - I
+  - I
+  - I
+- factory: oMerger4
+  input_symbols:
+  - I
+  - I
+  - I
+  - U1
+R01:
+- factory: oRotate_cw
+  input_symbols:
+  - R31
+- factory: oRotate_ccw
+  input_symbols:
+  - R11
+- factory: oReflect_hor
+  input_symbols:
+  - R
+- factory: oReflect_vert
+  input_symbols:
+  - R2
+R1:
+- factory: oRotate_cw
+  input_symbols:
+  - R
+- factory: oRotate_ccw
+  input_symbols:
+  - R2
+- factory: oReflect_hor
+  input_symbols:
+  - R31
+- factory: oReflect_vert
+  input_symbols:
+  - R11
+R11:
+- factory: oRotate_cw
+  input_symbols:
+  - R01
+- factory: oRotate_ccw
+  input_symbols:
+  - R21
+- factory: oReflect_hor
+  input_symbols:
+  - R3
+- factory: oReflect_vert
+  input_symbols:
+  - R1
+R2:
+- factory: oRotate_cw
+  input_symbols:
+  - R1
+- factory: oRotate_ccw
+  input_symbols:
+  - R3
+- factory: oReflect_hor
+  input_symbols:
+  - R21
+- factory: oReflect_vert
+  input_symbols:
+  - R01
+R21:
+- factory: oRotate_cw
+  input_symbols:
+  - R11
+- factory: oRotate_ccw
+  input_symbols:
+  - R31
+- factory: oReflect_hor
+  input_symbols:
+  - R2
+- factory: oReflect_vert
+  input_symbols:
+  - R
+R3:
+- factory: oRotate_cw
+  input_symbols:
+  - R2
+- factory: oRotate_ccw
+  input_symbols:
+  - R
+- factory: oReflect_hor
+  input_symbols:
+  - R11
+- factory: oReflect_vert
+  input_symbols:
+  - R31
+R31:
+- factory: oRotate_cw
+  input_symbols:
+  - R21
+- factory: oRotate_ccw
+  input_symbols:
+  - R01
+- factory: oReflect_hor
+  input_symbols:
+  - R1
+- factory: oReflect_vert
+  input_symbols:
+  - R3
+S:
+- factory: oRotate_ccw
+  input_symbols:
+  - S1
+- factory: oRotate_cw
+  input_symbols:
+  - S1
+- factory: oReflect_hor
+  input_symbols:
+  - S01
+- factory: oReflect_vert
+  input_symbols:
+  - S01
+- factory: oMerger2
+  input_symbols:
+  - U1
+  - U3
+- factory: oBend
+  input_symbols:
+  - Z01
+- factory: oBend
+  input_symbols:
+  - N11
+- factory: oBend
+  input_symbols:
+  - J
+- factory: oBend
+  input_symbols:
+  - J2
+- factory: oBend
+  input_symbols:
+  - '201'
+- factory: oBend
+  input_symbols:
+  - '221'
+S01:
+- factory: oRotate_ccw
+  input_symbols:
+  - S11
+- factory: oRotate_cw
+  input_symbols:
+  - S11
+- factory: oReflect_hor
+  input_symbols:
+  - S
+- factory: oReflect_vert
+  input_symbols:
+  - S
+S1:
+- factory: oRotate_cw
+  input_symbols:
+  - S
+- factory: oRotate_ccw
+  input_symbols:
+  - S
+- factory: oReflect_hor
+  input_symbols:
+  - S11
+- factory: oReflect_vert
+  input_symbols:
+  - S11
+S11:
+- factory: oRotate_cw
+  input_symbols:
+  - S01
+- factory: oRotate_ccw
+  input_symbols:
+  - S01
+- factory: oReflect_hor
+  input_symbols:
+  - S1
+- factory: oReflect_vert
+  input_symbols:
+  - S1
+T:
+- factory: oRotate_ccw
+  input_symbols:
+  - T1
+- factory: oRotate_cw
+  input_symbols:
+  - T3
+- factory: oReflect_hor
+  input_symbols:
+  - T
+- factory: oReflect_vert
+  input_symbols:
+  - T2
+- factory: oMerger2
+  input_symbols:
+  - I1
+  - L2
+- factory: oMerger2
+  input_symbols:
+  - L2
+  - L21
+- factory: oMerger2
+  input_symbols:
+  - I1
+  - L21
+- factory: oBend
+  input_symbols:
+  - Y
+T1:
+- factory: oRotate_cw
+  input_symbols:
+  - T
+- factory: oRotate_ccw
+  input_symbols:
+  - T2
+- factory: oReflect_hor
+  input_symbols:
+  - T3
+- factory: oReflect_vert
+  input_symbols:
+  - T1
+T2:
+- factory: oRotate_cw
+  input_symbols:
+  - T1
+- factory: oRotate_ccw
+  input_symbols:
+  - T3
+- factory: oReflect_hor
+  input_symbols:
+  - T2
+- factory: oReflect_vert
+  input_symbols:
+  - T
+T3:
+- factory: oRotate_cw
+  input_symbols:
+  - T2
+- factory: oRotate_ccw
+  input_symbols:
+  - T
+- factory: oReflect_hor
+  input_symbols:
+  - T1
+- factory: oReflect_vert
+  input_symbols:
+  - T3
+U:
+- factory: oRotate_ccw
+  input_symbols:
+  - U1
+- factory: oRotate_cw
+  input_symbols:
+  - U3
+- factory: oReflect_hor
+  input_symbols:
+  - U
+- factory: oReflect_vert
+  input_symbols:
+  - U2
+- factory: oMerger2
+  input_symbols:
+  - =1
+  - C1
+- factory: oMerger2
+  input_symbols:
+  - I
+  - L
+- factory: oMerger2
+  input_symbols:
+  - I
+  - L01
+- factory: oMerger2
+  input_symbols:
+  - L
+  - L01
+- factory: oMerger2
+  input_symbols:
+  - I
+  - J
+- factory: oMerger2
+  input_symbols:
+  - I
+  - J01
+- factory: oMerger2
+  input_symbols:
+  - J
+  - J01
+- factory: oMerger3
+  input_symbols:
+  - C1
+  - I
+  - I
+- factory: oBend
+  input_symbols:
+  - I1
+- factory: oBend
+  input_symbols:
+  - V
+U1:
+- factory: oRotate_cw
+  input_symbols:
+  - U
+- factory: oRotate_ccw
+  input_symbols:
+  - U2
+- factory: oReflect_hor
+  input_symbols:
+  - U3
+- factory: oReflect_vert
+  input_symbols:
+  - U1
+U2:
+- factory: oRotate_cw
+  input_symbols:
+  - U1
+- factory: oRotate_ccw
+  input_symbols:
+  - U3
+- factory: oReflect_hor
+  input_symbols:
+  - U2
+- factory: oReflect_vert
+  input_symbols:
+  - U
+U3:
+- factory: oRotate_cw
+  input_symbols:
+  - U2
+- factory: oRotate_ccw
+  input_symbols:
+  - U
+- factory: oReflect_hor
+  input_symbols:
+  - U1
+- factory: oReflect_vert
+  input_symbols:
+  - U3
+V:
+- factory: oRotate_ccw
+  input_symbols:
+  - V1
+- factory: oRotate_cw
+  input_symbols:
+  - V3
+- factory: oReflect_hor
+  input_symbols:
+  - V
+- factory: oReflect_vert
+  input_symbols:
+  - V2
+- factory: oMerger2
+  input_symbols:
+  - I
+  - I
+V1:
+- factory: oRotate_cw
+  input_symbols:
+  - V
+- factory: oRotate_ccw
+  input_symbols:
+  - V2
+- factory: oReflect_hor
+  input_symbols:
+  - V3
+- factory: oReflect_vert
+  input_symbols:
+  - V1
+V2:
+- factory: oRotate_cw
+  input_symbols:
+  - V1
+- factory: oRotate_ccw
+  input_symbols:
+  - V3
+- factory: oReflect_hor
+  input_symbols:
+  - V2
+- factory: oReflect_vert
+  input_symbols:
+  - V
+V3:
+- factory: oRotate_cw
+  input_symbols:
+  - V2
+- factory: oRotate_ccw
+  input_symbols:
+  - V
+- factory: oReflect_hor
+  input_symbols:
+  - V1
+- factory: oReflect_vert
+  input_symbols:
+  - V3
+W:
+- factory: oRotate_ccw
+  input_symbols:
+  - W1
+- factory: oRotate_cw
+  input_symbols:
+  - W3
+- factory: oReflect_hor
+  input_symbols:
+  - W
+- factory: oReflect_vert
+  input_symbols:
+  - W2
+- factory: oMerger2
+  input_symbols:
+  - V
+  - V
+- factory: oMerger2
+  input_symbols:
+  - U
+  - U
+- factory: oMerger3
+  input_symbols:
+  - I
+  - I
+  - V2
+- factory: oMerger4
+  input_symbols:
+  - I
+  - I
+  - I
+  - I
+- factory: oBend
+  input_symbols:
+  - M2
+W1:
+- factory: oRotate_cw
+  input_symbols:
+  - W
+- factory: oRotate_ccw
+  input_symbols:
+  - W2
+- factory: oReflect_hor
+  input_symbols:
+  - W3
+- factory: oReflect_vert
+  input_symbols:
+  - W1
+W2:
+- factory: oRotate_cw
+  input_symbols:
+  - W1
+- factory: oRotate_ccw
+  input_symbols:
+  - W3
+- factory: oReflect_hor
+  input_symbols:
+  - W2
+- factory: oReflect_vert
+  input_symbols:
+  - W
+W3:
+- factory: oRotate_cw
+  input_symbols:
+  - W2
+- factory: oRotate_ccw
+  input_symbols:
+  - W
+- factory: oReflect_hor
+  input_symbols:
+  - W1
+- factory: oReflect_vert
+  input_symbols:
+  - W3
+X:
+- factory: oRotate_cw
+  input_symbols:
+  - X
+- factory: oRotate_ccw
+  input_symbols:
+  - X
+- factory: oReflect_hor
+  input_symbols:
+  - X
+- factory: oReflect_vert
+  input_symbols:
+  - X
+- factory: oMerger2
+  input_symbols:
+  - V
+  - V2
+- factory: oMerger2
+  input_symbols:
+  - V1
+  - V3
+- factory: oBend
+  input_symbols:
+  - K
+- factory: oBend
+  input_symbols:
+  - K1
+- factory: oBend
+  input_symbols:
+  - K2
+- factory: oBend
+  input_symbols:
+  - K3
+Y:
+- factory: oRotate_ccw
+  input_symbols:
+  - Y1
+- factory: oRotate_cw
+  input_symbols:
+  - Y3
+- factory: oReflect_hor
+  input_symbols:
+  - Y
+- factory: oReflect_vert
+  input_symbols:
+  - Y2
+- factory: oMerger2
+  input_symbols:
+  - I
+  - V
+- factory: oBend
+  input_symbols:
+  - T
+Y1:
+- factory: oRotate_cw
+  input_symbols:
+  - Y
+- factory: oRotate_ccw
+  input_symbols:
+  - Y2
+- factory: oReflect_hor
+  input_symbols:
+  - Y3
+- factory: oReflect_vert
+  input_symbols:
+  - Y1
+Y2:
+- factory: oRotate_cw
+  input_symbols:
+  - Y1
+- factory: oRotate_ccw
+  input_symbols:
+  - Y3
+- factory: oReflect_hor
+  input_symbols:
+  - Y2
+- factory: oReflect_vert
+  input_symbols:
+  - Y
+Y3:
+- factory: oRotate_cw
+  input_symbols:
+  - Y2
+- factory: oRotate_ccw
+  input_symbols:
+  - Y
+- factory: oReflect_hor
+  input_symbols:
+  - Y1
+- factory: oReflect_vert
+  input_symbols:
+  - Y3
+Z:
+- factory: oRotate_ccw
+  input_symbols:
+  - Z1
+- factory: oRotate_cw
+  input_symbols:
+  - Z1
+- factory: oReflect_hor
+  input_symbols:
+  - Z01
+- factory: oReflect_vert
+  input_symbols:
+  - Z01
+- factory: oMerger2
+  input_symbols:
+  - I1
+  - V1
+- factory: oMerger2
+  input_symbols:
+  - I1
+  - V3
+- factory: oMerger3
+  input_symbols:
+  - I1
+  - I1
+  - I1
+Z01:
+- factory: oRotate_ccw
+  input_symbols:
+  - Z11
+- factory: oRotate_cw
+  input_symbols:
+  - Z11
+- factory: oReflect_hor
+  input_symbols:
+  - Z
+- factory: oReflect_vert
+  input_symbols:
+  - Z
+Z1:
+- factory: oRotate_cw
+  input_symbols:
+  - Z
+- factory: oRotate_ccw
+  input_symbols:
+  - Z
+- factory: oReflect_hor
+  input_symbols:
+  - Z11
+- factory: oReflect_vert
+  input_symbols:
+  - Z11
+Z11:
+- factory: oRotate_cw
+  input_symbols:
+  - Z01
+- factory: oRotate_ccw
+  input_symbols:
+  - Z01
+- factory: oReflect_hor
+  input_symbols:
+  - Z1
+- factory: oReflect_vert
+  input_symbols:
+  - Z1
+d:
+- factory: oRotate_ccw
+  input_symbols:
+  - d1
+- factory: oRotate_cw
+  input_symbols:
+  - d3
+- factory: oReflect_hor
+  input_symbols:
+  - d01
+- factory: oReflect_vert
+  input_symbols:
+  - d21
+- factory: oMerger3
+  input_symbols:
+  - I1
+  - O
+  - U2
+- factory: oMerger4
+  input_symbols:
+  - D
+  - O
+  - O
+  - R
+d01:
+- factory: oRotate_cw
+  input_symbols:
+  - d31
+- factory: oRotate_ccw
+  input_symbols:
+  - d11
+- factory: oReflect_hor
+  input_symbols:
+  - d
+- factory: oReflect_vert
+  input_symbols:
+  - d2
+d1:
+- factory: oRotate_cw
+  input_symbols:
+  - d
+- factory: oRotate_ccw
+  input_symbols:
+  - d2
+- factory: oReflect_hor
+  input_symbols:
+  - d31
+- factory: oReflect_vert
+  input_symbols:
+  - d11
+d11:
+- factory: oRotate_cw
+  input_symbols:
+  - d01
+- factory: oRotate_ccw
+  input_symbols:
+  - d21
+- factory: oReflect_hor
+  input_symbols:
+  - d3
+- factory: oReflect_vert
+  input_symbols:
+  - d1
+d2:
+- factory: oRotate_cw
+  input_symbols:
+  - d1
+- factory: oRotate_ccw
+  input_symbols:
+  - d3
+- factory: oReflect_hor
+  input_symbols:
+  - d21
+- factory: oReflect_vert
+  input_symbols:
+  - d01
+d21:
+- factory: oRotate_cw
+  input_symbols:
+  - d11
+- factory: oRotate_ccw
+  input_symbols:
+  - d31
+- factory: oReflect_hor
+  input_symbols:
+  - d2
+- factory: oReflect_vert
+  input_symbols:
+  - d
+d3:
+- factory: oRotate_cw
+  input_symbols:
+  - d2
+- factory: oRotate_ccw
+  input_symbols:
+  - d
+- factory: oReflect_hor
+  input_symbols:
+  - d11
+- factory: oReflect_vert
+  input_symbols:
+  - d31
+d31:
+- factory: oRotate_cw
+  input_symbols:
+  - d21
+- factory: oRotate_ccw
+  input_symbols:
+  - d01
+- factory: oReflect_hor
+  input_symbols:
+  - d1
+- factory: oReflect_vert
+  input_symbols:
+  - d3
+k:
+- factory: oRotate_ccw
+  input_symbols:
+  - k1
+- factory: oRotate_cw
+  input_symbols:
+  - k3
+- factory: oReflect_hor
+  input_symbols:
+  - k01
+- factory: oReflect_vert
+  input_symbols:
+  - k21
+- factory: oMerger2
+  input_symbols:
+  - O
+  - F21
+- factory: oMerger2
+  input_symbols:
+  - O
+  - F31
+- factory: oMerger3
+  input_symbols:
+  - K
+  - E
+  - Y
+- factory: oMerger3
+  input_symbols:
+  - O
+  - L
+  - L
+- factory: oMerger3
+  input_symbols:
+  - O
+  - L1
+  - L1
+- factory: oMerger3
+  input_symbols:
+  - O
+  - I
+  - '='
+- factory: oMerger3
+  input_symbols:
+  - O
+  - I1
+  - =1
+- factory: oMerger4
+  input_symbols:
+  - O
+  - I
+  - I
+  - I1
+- factory: oMerger4
+  input_symbols:
+  - O
+  - I
+  - I1
+  - I1
+k01:
+- factory: oRotate_cw
+  input_symbols:
+  - k31
+- factory: oRotate_ccw
+  input_symbols:
+  - k11
+- factory: oReflect_hor
+  input_symbols:
+  - k
+- factory: oReflect_vert
+  input_symbols:
+  - k2
+k1:
+- factory: oRotate_cw
+  input_symbols:
+  - k
+- factory: oRotate_ccw
+  input_symbols:
+  - k2
+- factory: oReflect_hor
+  input_symbols:
+  - k31
+- factory: oReflect_vert
+  input_symbols:
+  - k11
+k11:
+- factory: oRotate_cw
+  input_symbols:
+  - k01
+- factory: oRotate_ccw
+  input_symbols:
+  - k21
+- factory: oReflect_hor
+  input_symbols:
+  - k3
+- factory: oReflect_vert
+  input_symbols:
+  - k1
+k2:
+- factory: oRotate_cw
+  input_symbols:
+  - k1
+- factory: oRotate_ccw
+  input_symbols:
+  - k3
+- factory: oReflect_hor
+  input_symbols:
+  - k21
+- factory: oReflect_vert
+  input_symbols:
+  - k01
+k21:
+- factory: oRotate_cw
+  input_symbols:
+  - k11
+- factory: oRotate_ccw
+  input_symbols:
+  - k31
+- factory: oReflect_hor
+  input_symbols:
+  - k2
+- factory: oReflect_vert
+  input_symbols:
+  - k
+k3:
+- factory: oRotate_cw
+  input_symbols:
+  - k2
+- factory: oRotate_ccw
+  input_symbols:
+  - k
+- factory: oReflect_hor
+  input_symbols:
+  - k11
+- factory: oReflect_vert
+  input_symbols:
+  - k31
+k31:
+- factory: oRotate_cw
+  input_symbols:
+  - k21
+- factory: oRotate_ccw
+  input_symbols:
+  - k01
+- factory: oReflect_hor
+  input_symbols:
+  - k1
+- factory: oReflect_vert
+  input_symbols:
+  - k3
+'~':
+- factory: oRotate_ccw
+  input_symbols:
+  - ~1
+- factory: oRotate_cw
+  input_symbols:
+  - ~1
+- factory: oReflect_hor
+  input_symbols:
+  - ~01
+- factory: oReflect_vert
+  input_symbols:
+  - ~01
+- factory: oMerger2
+  input_symbols:
+  - (1
+  - )1
+- factory: oBend
+  input_symbols:
+  - S11
+~01:
+- factory: oRotate_ccw
+  input_symbols:
+  - ~11
+- factory: oRotate_cw
+  input_symbols:
+  - ~11
+- factory: oReflect_hor
+  input_symbols:
+  - '~'
+- factory: oReflect_vert
+  input_symbols:
+  - '~'
+~1:
+- factory: oRotate_cw
+  input_symbols:
+  - '~'
+- factory: oRotate_ccw
+  input_symbols:
+  - '~'
+- factory: oReflect_hor
+  input_symbols:
+  - ~11
+- factory: oReflect_vert
+  input_symbols:
+  - ~11
+~11:
+- factory: oRotate_cw
+  input_symbols:
+  - ~01
+- factory: oRotate_ccw
+  input_symbols:
+  - ~01
+- factory: oReflect_hor
+  input_symbols:
+  - ~1
+- factory: oReflect_vert
+  input_symbols:
+  - ~1
