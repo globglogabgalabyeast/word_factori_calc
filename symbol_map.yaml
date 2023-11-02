@@ -4,13 +4,13 @@
   - '#1'
 - factory: oRotate_cw
   input_symbols:
-  - '#3'
+  - '#1'
 - factory: oReflect_hor
   input_symbols:
   - '#01'
 - factory: oReflect_vert
   input_symbols:
-  - '#21'
+  - '#01'
 - factory: oMerger2
   input_symbols:
   - '='
@@ -28,10 +28,10 @@
   - +
   - +
 '#01':
-- factory: oRotate_cw
-  input_symbols:
-  - '#31'
 - factory: oRotate_ccw
+  input_symbols:
+  - '#11'
+- factory: oRotate_cw
   input_symbols:
   - '#11'
 - factory: oReflect_hor
@@ -39,17 +39,17 @@
   - '#'
 - factory: oReflect_vert
   input_symbols:
-  - '#2'
+  - '#'
 '#1':
 - factory: oRotate_cw
   input_symbols:
   - '#'
 - factory: oRotate_ccw
   input_symbols:
-  - '#2'
+  - '#'
 - factory: oReflect_hor
   input_symbols:
-  - '#31'
+  - '#11'
 - factory: oReflect_vert
   input_symbols:
   - '#11'
@@ -59,65 +59,13 @@
   - '#01'
 - factory: oRotate_ccw
   input_symbols:
-  - '#21'
-- factory: oReflect_hor
-  input_symbols:
-  - '#3'
-- factory: oReflect_vert
-  input_symbols:
-  - '#1'
-'#2':
-- factory: oRotate_cw
-  input_symbols:
-  - '#1'
-- factory: oRotate_ccw
-  input_symbols:
-  - '#3'
-- factory: oReflect_hor
-  input_symbols:
-  - '#21'
-- factory: oReflect_vert
-  input_symbols:
-  - '#01'
-'#21':
-- factory: oRotate_cw
-  input_symbols:
-  - '#11'
-- factory: oRotate_ccw
-  input_symbols:
-  - '#31'
-- factory: oReflect_hor
-  input_symbols:
-  - '#2'
-- factory: oReflect_vert
-  input_symbols:
-  - '#'
-'#3':
-- factory: oRotate_cw
-  input_symbols:
-  - '#2'
-- factory: oRotate_ccw
-  input_symbols:
-  - '#'
-- factory: oReflect_hor
-  input_symbols:
-  - '#11'
-- factory: oReflect_vert
-  input_symbols:
-  - '#31'
-'#31':
-- factory: oRotate_cw
-  input_symbols:
-  - '#21'
-- factory: oRotate_ccw
-  input_symbols:
   - '#01'
 - factory: oReflect_hor
   input_symbols:
   - '#1'
 - factory: oReflect_vert
   input_symbols:
-  - '#3'
+  - '#1'
 $:
 - factory: oRotate_ccw
   input_symbols:
@@ -525,6 +473,10 @@ $11:
   input_symbols:
   - J
   - J2
+- factory: oMerger2
+  input_symbols:
+  - J01
+  - J21
 - factory: oMerger4
   input_symbols:
   - Z
@@ -828,6 +780,16 @@ $11:
   input_symbols:
   - C3
   - V3
+- factory: oMerger3
+  input_symbols:
+  - C3
+  - I
+  - I1
+- factory: oMerger3
+  input_symbols:
+  - U2
+  - I
+  - I1
 - factory: oMerger3
   input_symbols:
   - T
@@ -1181,6 +1143,10 @@ $11:
   - '421'
 - factory: oMerger2
   input_symbols:
+  - =1
+  - L2
+- factory: oMerger2
+  input_symbols:
   - I
   - '72'
 - factory: oMerger3
@@ -1188,6 +1154,11 @@ $11:
   - I
   - I
   - L
+- factory: oMerger3
+  input_symbols:
+  - =1
+  - I1
+  - I
 - factory: oMerger4
   input_symbols:
   - F
@@ -1417,14 +1388,38 @@ $11:
   - C2
 - factory: oMerger2
   input_symbols:
-  - L01
+  - L21
   - C2
+- factory: oMerger2
+  input_symbols:
+  - L3
+  - U1
+- factory: oMerger2
+  input_symbols:
+  - L21
+  - U1
+- factory: oMerger3
+  input_symbols:
+  - C2
+  - I
+  - I1
+- factory: oMerger3
+  input_symbols:
+  - U1
+  - I
+  - I1
 - factory: oMerger4
   input_symbols:
   - F
   - I
   - V
   - E
+- factory: oMerger4
+  input_symbols:
+  - L1
+  - L11
+  - I
+  - I1
 - factory: oMerger2
   input_symbols:
   - '5'
@@ -2825,6 +2820,10 @@ A:
   input_symbols:
   - H
   - I1
+- factory: oMerger2
+  input_symbols:
+  - F
+  - I
 - factory: oMerger3
   input_symbols:
   - I1
@@ -2935,6 +2934,14 @@ B:
   - U1
 - factory: oMerger2
   input_symbols:
+  - P
+  - J11
+- factory: oMerger2
+  input_symbols:
+  - P21
+  - J1
+- factory: oMerger2
+  input_symbols:
   - R
   - C1
 - factory: oMerger2
@@ -2949,6 +2956,10 @@ B:
   input_symbols:
   - I
   - W1
+- factory: oMerger2
+  input_symbols:
+  - I
+  - M3
 - factory: oMerger3
   input_symbols:
   - C2
@@ -2976,9 +2987,19 @@ B:
   - )
 - factory: oMerger3
   input_symbols:
+  - )
+  - )
+  - I
+- factory: oMerger3
+  input_symbols:
   - C2
   - I
   - U1
+- factory: oMerger3
+  input_symbols:
+  - L21
+  - J11
+  - J11
 - factory: oMerger3
   input_symbols:
   - )
@@ -2999,6 +3020,21 @@ B:
   - I
   - U1
   - U1
+- factory: oMerger3
+  input_symbols:
+  - I
+  - I
+  - M3
+- factory: oMerger3
+  input_symbols:
+  - I
+  - I
+  - W1
+- factory: oMerger3
+  input_symbols:
+  - I
+  - V1
+  - V1
 - factory: oMerger3
   input_symbols:
   - T1
@@ -3039,6 +3075,24 @@ B:
   - I1
   - I1
   - K
+- factory: oMerger4
+  input_symbols:
+  - I
+  - I1
+  - J11
+  - J11
+- factory: oMerger4
+  input_symbols:
+  - I
+  - I1
+  - J1
+  - J1
+- factory: oMerger4
+  input_symbols:
+  - I
+  - I1
+  - J1
+  - J11
 - factory: oMerger4
   input_symbols:
   - C2
@@ -3252,6 +3306,10 @@ E:
 - factory: oMerger2
   input_symbols:
   - L
+  - '='
+- factory: oMerger2
+  input_symbols:
+  - L21
   - '='
 - factory: oMerger2
   input_symbols:
@@ -4211,6 +4269,14 @@ P:
   - C2
 - factory: oMerger2
   input_symbols:
+  - T1
+  - J1
+- factory: oMerger2
+  input_symbols:
+  - L21
+  - J11
+- factory: oMerger2
+  input_symbols:
   - D
   - I
 - factory: oMerger3
@@ -4223,6 +4289,21 @@ P:
   - I
   - I
   - U1
+- factory: oMerger3
+  input_symbols:
+  - )
+  - I
+  - I
+- factory: oMerger3
+  input_symbols:
+  - I
+  - I1
+  - J11
+- factory: oMerger3
+  input_symbols:
+  - I
+  - I1
+  - J1
 P01:
 - factory: oRotate_cw
   input_symbols:
@@ -4632,6 +4713,12 @@ S:
 - factory: oBend
   input_symbols:
   - '221'
+- factory: oBend
+  input_symbols:
+  - '5'
+- factory: oBend
+  input_symbols:
+  - '52'
 S01:
 - factory: oRotate_ccw
   input_symbols:
@@ -5129,6 +5216,10 @@ d:
 - factory: oReflect_vert
   input_symbols:
   - d21
+- factory: oMerger2
+  input_symbols:
+  - D1
+  - O
 - factory: oMerger3
   input_symbols:
   - I1
