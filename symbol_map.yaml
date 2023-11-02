@@ -4110,6 +4110,10 @@ M:
   input_symbols:
   - V2
   - V2
+- factory: oMerger2
+  input_symbols:
+  - Z1
+  - I
 - factory: oMerger3
   input_symbols:
   - I

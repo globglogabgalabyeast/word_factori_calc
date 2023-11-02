@@ -228,11 +228,24 @@ def optimize_all_symbols(symbol_map, optimized_metric='cycles', banned_symbols=[
 
             symbol_found = False
             # Perform a BFS on number of factories to reach each symbol
-            for symbol in (set(allowed_symbols) - set(symbol_distance.keys())):
+
+            #test = [symbol for symbol in allowed_symbols if symbol not in symbol_distance]
+            #import pdb; pdb.set_trace()
+
+
+            for symbol in [symbol for symbol in allowed_symbols if symbol not in symbol_distance]:
+                if symbol == 'word':
+                    for symbol_to_reach, recipe in symbols_to_reach.items():
+                        if print_process: print(f'Adding symbol {symbol_to_reach}')
+                        symbol_distance[symbol_to_reach] = {'distance': step, 'recipe': recipe}
+
                 for recipe in symbol_map[symbol]:
                     if (recipe['factory'] not in banned_factories) and (not (set(recipe['input_symbols']) - set(symbol_distance.keys()))):
                         symbol_found = True
                         recipe_distance = sum([symbol_distance[recipe_symbol]['distance'] for recipe_symbol in recipe['input_symbols']]) + 1
+                        if symbol == 'word':
+                            recipe_distance -= 1 # Solving doesn't cost anything
+
                         if recipe_distance == step:
                             if symbol in symbols_to_reach:
                                 symbols_to_reach[symbol].append(recipe)
@@ -261,7 +274,12 @@ def optimize_all_symbols(symbol_map, optimized_metric='cycles', banned_symbols=[
 
             symbol_found = False
             # Perform a BFS on number of factories to reach each symbol
-            for symbol in (set(allowed_symbols) - set(symbol_distance.keys())):
+            for symbol in [symbol for symbol in allowed_symbols if symbol not in symbol_distance]:
+                if symbol == 'word':
+                    for symbol_to_reach, recipe in symbols_to_reach.items():
+                        if print_process: print(f'Adding symbol {symbol_to_reach}')
+                        symbol_distance[symbol_to_reach] = {'distance': step, 'recipe': recipe}
+
                 for recipe in symbol_map[symbol]:
                     if (recipe['factory'] not in banned_factories) and (not (set(recipe['input_symbols']) - set(symbol_distance.keys()))):
                         symbol_found = True
@@ -278,7 +296,6 @@ def optimize_all_symbols(symbol_map, optimized_metric='cycles', banned_symbols=[
                         if symbol == 'word':
                             recipe_distance -= 1 # Solving doesn't cost anything
                         
-
                         # Only combining symbols from previous step
                         # recipe_distance = sum([symbol_distance[recipe_symbol]['distance'] for recipe_symbol in set(recipe['input_symbols'])]) + 1
                         if recipe_distance == step:
@@ -287,9 +304,9 @@ def optimize_all_symbols(symbol_map, optimized_metric='cycles', banned_symbols=[
                                 pass
                             else:
                                 symbols_to_reach[symbol] = [recipe]
-            for symbol, recipe in symbols_to_reach.items():
-                if print_process: print(f'Adding symbol {symbol}')
-                symbol_distance[symbol] = {'distance': step, 'recipe': recipe}
+            for symbol_to_reach, recipe in symbols_to_reach.items():
+                if print_process: print(f'Adding symbol {symbol_to_reach}')
+                symbol_distance[symbol_to_reach] = {'distance': step, 'recipe': recipe}
 
             if print_process:
                 if symbols_to_reach:
@@ -394,8 +411,8 @@ def optimize_all_symbols(symbol_map, optimized_metric='cycles', banned_symbols=[
                                         if is_last_loop:
                                             symbols_to_reach[symbol] = subsets
 
-            for symbol, symbol_sets in symbols_to_reach.items():
-                symbol_distance[symbol] = symbol_sets
+            for symbol_to_reach, symbol_sets in symbols_to_reach.items():
+                symbol_distance[symbol_to_reach] = symbol_sets
             symbols_to_reach = {}
             step += 1
             
@@ -429,69 +446,77 @@ def optimize_word(word, symbol_map, optimized_metric='cycles', banned_symbols=[]
         raise ValueError(f'Invalid type for word {word} - require string or list')
 
     adjusted_symbol_map = copy.deepcopy(symbol_map)
-    if len(symbol_list) > 1:
-        adjusted_symbol_map['word'] = [recipe_schema('solve', symbol_list)]
+    adjusted_symbol_map['word'] = [recipe_schema('solve', symbol_list)]
 
     if optimized_metric in ['cycles', 'basic_factories']:
         all_formulas = optimize_all_symbols(adjusted_symbol_map, optimized_metric, banned_symbols, banned_factories, print_process=False)
 
-        # Printing results
-        printed_symbols = set()
-        symbols_to_print = ['word']
-        while symbols_to_print:
-            key = symbols_to_print[0]
-            val = all_formulas[key]
-            symbols_to_print.remove(key)
-            symbols_to_print.extend(val['recipe'][0]['input_symbols'])
+        if 'word' in all_formulas:
+            # Printing results
+            printed_symbols = set()
+            symbols_to_print = ['word']
+            while symbols_to_print:
+                key = symbols_to_print[0]
+                val = all_formulas[key]
+                symbols_to_print.remove(key)
+                symbols_to_print.extend(val['recipe'][0]['input_symbols'])
 
-            if key == 'word':
-                symbol = word
-            else:
-                symbol = key
+                if key == 'word':
+                    symbol = word
+                else:
+                    symbol = key
 
-            if symbol not in printed_symbols:
-                print(f'{symbol} : {val}')
-            printed_symbols.add(key)
+                if symbol not in printed_symbols:
+                    print(f'{symbol} : {val}')
+                printed_symbols.add(key)
+        else:
+            print(f'{word} is not possible to create with these restrictions')
 
     elif optimized_metric in ['exhaustive_factories']:
         all_formulas_naive = optimize_all_symbols(adjusted_symbol_map, 'basic_factories', banned_symbols, banned_factories, print_process=False)
-        prelim_distance = all_formulas_naive['word']['distance']
-        print(f'\n{word} upper bound for required factories: {prelim_distance}')
-        all_formulas = optimize_all_symbols(adjusted_symbol_map, 'exhaustive_factories', banned_symbols, banned_factories, print_process=False, max_factories=prelim_distance)
+        if 'word' in all_formulas_naive:
+            prelim_distance = all_formulas_naive['word']['distance']
+            print(f'\n{word} upper bound for required factories: {prelim_distance}')
+            all_formulas = optimize_all_symbols(adjusted_symbol_map, 'exhaustive_factories', banned_symbols, banned_factories, print_process=False, max_factories=prelim_distance)
 
-        min_factories = min(len(symbol_set) for symbol_set in all_formulas['word'])
-        solutions = [symbol_set for symbol_set in all_formulas['word'] if len(symbol_set)==min_factories]
-        print(f'\n\n{word} minimum factories: {min_factories}')
+            min_factories = min(len(symbol_set) for symbol_set in all_formulas['word'])
+            solutions = [symbol_set for symbol_set in all_formulas['word'] if len(symbol_set)==min_factories]
+            print(f'\n\n{word} minimum factories: {min_factories}')
 
-        symbol_dependencies = []
-        solution_formulas = []
-        for i, solution in enumerate(solutions):
-            print(f'\nSolution {i+1} of {len(solutions)}')
+            symbol_dependencies = []
+            solution_formulas = []
+            for i, solution in enumerate(solutions):
+                print(f'\nSolution {i+1} of {len(solutions)}')
 
-            symbol_dependencies.append({word: [solution]})
-            for symbol in solution:
-                symbol_dependencies[i][symbol] = [symbol_set for symbol_set in all_formulas[symbol] if not (symbol_set-set(solution))]
-            # Sorting by number of symbol dependencies in solution
-            symbol_dependencies[i] = dict(sorted(symbol_dependencies[i].items(), key=lambda items: len(items[1][0]), reverse=True))
-                
-            solution_formulas.append({})
-            for symbol in symbol_dependencies[i]:
-                solution_formulas[i][symbol] = []
-                if symbol == word:
-                    solution_formulas[i][symbol].append(adjusted_symbol_map['word'])
-                else:
-                    for recipe in symbol_map[symbol]:
-                        recipe_added = False
-                        for symbol_dependency_case in symbol_dependencies[i][symbol]:
-                            if (recipe['factory'] not in banned_factories) and not (set(recipe['input_symbols']) - set(symbol_dependency_case)):
-                                if not recipe_added:
-                                    solution_formulas[i][symbol].append(recipe)
-                                    recipe_added = True
+                symbol_dependencies.append({word: [solution]})
+                for symbol in solution:
+                    symbol_dependencies[i][symbol] = [symbol_set for symbol_set in all_formulas[symbol] if not (symbol_set-set(solution))]
+                # Sorting by number of symbol dependencies in solution
+                symbol_dependencies[i] = dict(sorted(symbol_dependencies[i].items(), key=lambda items: len(items[1][0]), reverse=True))
+                    
+                solution_formulas.append({})
+                for symbol in symbol_dependencies[i]:
+                    solution_formulas[i][symbol] = []
+                    if symbol == word:
+                        solution_formulas[i][symbol].append(adjusted_symbol_map['word'])
+                    else:
+                        for recipe in symbol_map[symbol]:
+                            recipe_added = False
+                            for symbol_dependency_case in symbol_dependencies[i][symbol]:
+                                if (recipe['factory'] not in banned_factories) and not (set(recipe['input_symbols']) - set(symbol_dependency_case)):
+                                    if not recipe_added:
+                                        solution_formulas[i][symbol].append(recipe)
+                                        recipe_added = True
 
-            #for key, val in symbol_dependencies[i].items():
-            #    print(f'{key} : {val}')
-            for key, val in solution_formulas[i].items():
-                print(f'{key} : {val}')
+                #for key, val in symbol_dependencies[i].items():
+                #    print(f'{key} : {val}')
+                for key, val in solution_formulas[i].items():
+                    print(f'{key} : {val}')
+        else:
+            print(f'{word} is not possible to create with these restrictions')
+    else:
+        print(f'Unsupported optimization metric: {optimized_metric}')
+        all_formulas = None
 
 
     return all_formulas
@@ -529,8 +554,9 @@ if __name__ == '__main__':
     #word = '314159'
     #word = '$T@RG@RD3N'
     word = 'TEDDY'
-    #TODO Fixes for very simple words, e.g., single letters
-    #word = 'V'
+
+    #optimized_metric = 'cycles'
+    #optimized_metric = 'basic_factories'
     optimized_metric = 'exhaustive_factories'
     while True:
         all_formulas = optimize_word(word, symbol_map, optimized_metric=optimized_metric)
