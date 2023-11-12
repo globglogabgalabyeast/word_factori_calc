@@ -1002,7 +1002,7 @@ $11:
   - M3
 - factory: oBend
   input_symbols:
-  - E01
+  - E2
 - factory: oMerger2
   input_symbols:
   - '3'
